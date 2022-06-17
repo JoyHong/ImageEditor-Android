@@ -119,7 +119,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             File photoFile = FileUtils.genEditFile();
             // Continue only if the File was successfully created
             if (photoFile != null) {
-                photoURI = Uri.fromFile(photoFile);
+//                photoURI = Uri.fromFile(photoFile);
+
+                photoURI = FileProvider.getUriForFile(
+                        this,
+                        getPackageName() + ".fileProvider",
+                        photoFile);
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 startActivityForResult(takePictureIntent, TAKE_PHOTO_CODE);
             }

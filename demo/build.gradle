@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.xinlan.imageeditandroid"
         minSdkVersion 19
-        targetSdkVersion 31
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
