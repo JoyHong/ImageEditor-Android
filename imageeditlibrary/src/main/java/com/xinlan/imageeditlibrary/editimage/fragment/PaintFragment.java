@@ -66,7 +66,7 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
             Color.DKGRAY, Color.GRAY, Color.LTGRAY, Color.WHITE,
             Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW, Color.CYAN, Color.MAGENTA};
 
-    public ArrayList<PaintColorBean> mPaintColorList = new ArrayList<PaintColorBean>();
+    public ArrayList<PaintColorBean> mPaintColorList = new ArrayList<>();
 
     public static PaintFragment newInstance() {
         PaintFragment fragment = new PaintFragment();
@@ -114,7 +114,7 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
         stickerListLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         mColorListView.setLayoutManager(stickerListLayoutManager);
-
+        mPaintColorList.clear();
         for (int mPaintColor : mPaintColors) {
             mPaintColorList.add(new PaintColorBean(mPaintColor,false));
         }
