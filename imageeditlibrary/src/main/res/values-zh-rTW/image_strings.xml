@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">編輯圖片</string>
+    <string name="no_images">沒有發現圖片</string>
+    <string name="images">%d 張圖片</string>
+    <string name="save">保存</string>
+    <string name="apply">應用</string>
+    <string name="stickers">貼圖</string>
+    <string name="filter">濾鏡</string>
+    <string name="crop">裁剪</string>
+    <string name="rotate">旋轉</string>
+    <string name="text">文字</string>
+    <string name="edit">編輯</string>
+    <string name="materialcolorpicker__app_name">顏色選擇</string>
+    <string name="materialcolorpicker__descLib">顏色選擇</string>
+    <string name="materialcolorpicker__errHex">顏色值不正確</string>
+    <string name="materialcolorpicker__inputColor">顏色:</string>
+    <string name="materialcolorpicker__btnSelectColor">選擇</string>
+    <string name="saving_image">圖片保存中...</string>
+    <string name="input_hint">輸入文本 ...</string>
+    <string name="no_choose">請選擇一張需要編輯的圖片</string>
+    <string name="auto_newline">自動換行</string>
+    <string name="save_error">圖片保存失敗</string>
+    <string name="handing">處理中...</string>
+
+    <string-array name="filters">
+        <item>原始</item>
+        <item>軟化</item>
+        <item>黑白</item>
+        <item>經典</item>
+        <item>華麗</item>
+        <item>復古</item>
+        <item>優雅</item>
+        <item>電影</item>
+        <item>回憶</item>
+        <item>優格</item>
+        <item>流年</item>
+        <item>發光</item>
+        <item>馬賽克</item>
+    </string-array>
+
+    <string name="more">更多</string>
+    <string name="exit_without_save">編輯的圖片還未保存,確認退出嗎？</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">取消</string>
+
+    <string name="beauty">美顏</string>
+    <string name="smooth">磨皮</string>
+    <string name="white_skin">美白</string>
+</resources>

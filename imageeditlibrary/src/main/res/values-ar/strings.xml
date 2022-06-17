@@ -1,0 +1,54 @@
+<resources>
+    <string name="no_images">لم يتم العثور على الصورة</string>
+    <string name="images">٪ d صور</string>
+    <string name="save">حفظ</string>
+    <string name="apply">يتقدم</string>
+
+    <string name="stickers">ملصقات</string>
+    <string name="filter">منقي</string>
+    <string name="crop"><![CDATA[ا & قتصاص]]></string>
+    <string name="rotate">استدارة</string>
+    <string name="text">نص</string>
+    <string name="edit">تعديل</string>
+
+
+
+    <string name="materialcolorpicker__app_name">مربع حوار منتقي ألوان المواد في Android</string>
+    <string name="materialcolorpicker__descLib">مربع حوار منتقي ألوان المواد</string>
+    <string name="materialcolorpicker__errHex">تنسيق الكود السداسي غير صحيح</string>
+    <string name="materialcolorpicker__inputColor">اللون:</string>
+    <string name="materialcolorpicker__btnSelectColor">يختار</string>
+    <string name="saving_image">حفظ...</string>
+    <string name="input_hint">أدخل نصآ ...</string>
+
+    <string name="no_choose">الرجاء اختيار صورة للتحرير</string>
+    <string name="auto_newline">خط جديد تلقائي</string>
+    <string name="save_error">حفظ الخطأ!</string>
+    <string name="handing">جار التحميل...</string>
+
+    <string-array name="filters">
+        <item>الأصل</item>
+        <item>لين</item>
+        <item>أسود</item>
+        <item>كلاسيكي</item>
+        <item>خلاب</item>
+        <item>الرجعية</item>
+        <item>نعمة او وقت سماح</item>
+        <item>فيلم</item>
+        <item>ذاكرة</item>
+        <item>زبادي</item>
+        <item>عابر</item>
+        <item>يلمع</item>
+        <item>فسيفساء</item>
+    </string-array>
+
+    <string name="more">أكثر</string>
+    <string name="exit_without_save">لا يتم حفظ الصورة المحررة. هل تريد الخروج؟</string>
+    <string name="confirm">تؤكد</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="beauty">جمال</string>
+    <string name="smooth">ناعم</string>
+    <string name="white_skin">بشرة بيضاء</string>
+    <string name="app_name">مكتبة الصور</string>
+</resources>

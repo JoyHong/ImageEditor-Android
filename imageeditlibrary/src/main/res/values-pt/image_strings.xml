@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_images">Não foi encontrada a imagem</string>
+    <string name="images">%d imagens</string>
+    <string name="save">salvar</string>
+    <string name="apply">aplicar</string>
+
+    <string name="stickers">autocolantes</string>
+    <string name="filter">filtro</string>
+    <string name="crop">cultura</string>
+    <string name="rotate">girar</string>
+    <string name="text">texto</string>
+    <string name="edit">editar</string>
+
+
+
+    <string name="materialcolorpicker__app_name">Janela de Selecção de Cores de Material do Android</string>
+    <string name="materialcolorpicker__descLib">Janela do Seletor de Cores do Material</string>
+    <string name="materialcolorpicker__errHex">Formato do Código Hex incorrecto</string>
+    <string name="materialcolorpicker__inputColor">Cor:</string>
+    <string name="materialcolorpicker__btnSelectColor">Seleccionar</string>
+    <string name="saving_image">salvar...</string>
+    <string name="input_hint">texto de entrada ...</string>
+
+    <string name="no_choose">por favor escolha uma imagem para editar</string>
+    <string name="auto_newline">Linha Nova Automática</string>
+    <string name="save_error">Erro de gravação!</string>
+    <string name="handing">carga...</string>
+
+    <string-array name="filters">
+        <item>origin</item>
+        <item>macio</item>
+        <item>preto</item>
+        <item>clássico</item>
+        <item>lindo</item>
+        <item>retro</item>
+        <item>graça</item>
+        <item>película</item>
+        <item>memória</item>
+        <item>iogurte</item>
+        <item>fugaz</item>
+        <item>brilho</item>
+        <item>mosaico</item>
+    </string-array>
+
+    <string name="more">mais</string>
+    <string name="exit_without_save">A imagem editada não é gravada. Queres sair? </string>
+    <string name="confirm">confirmar</string>
+    <string name="cancel">cancelar</string>
+
+    <string name="beauty">beleza</string>
+    <string name="smooth">suave</string>
+    <string name="white_skin">pele branca</string>
+    <string name="app_name">Biblioteca de Edição de Imagens</string>
+</resources>

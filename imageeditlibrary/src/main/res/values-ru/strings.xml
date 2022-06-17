@@ -1,0 +1,54 @@
+<resources>
+    <string name="no_images">Изображение не найдено</string>
+    <string name="images">% изображений d</string>
+    <string name="save">За исключением:</string>
+    <string name="apply">1. Применить</string>
+
+    <string name="stickers">3. Наклейки</string>
+    <string name="filter">Фильтры для воды</string>
+    <string name="crop">Урожай на полях</string>
+    <string name="rotate">По принципу ротации</string>
+    <string name="text">Текст на английском языке</string>
+    <string name="edit">2. Редактирование</string>
+
+
+
+    <string name="materialcolorpicker__app_name">Диалог выбора цвета для Android</string>
+    <string name="materialcolorpicker__descLib">Диалог выбора цвета материала</string>
+    <string name="materialcolorpicker__errHex">Формат кода Hex неверный</string>
+    <string name="materialcolorpicker__inputColor">Цвет: красный</string>
+    <string name="materialcolorpicker__btnSelectColor">выбрать</string>
+    <string name="saving_image">- спасти...</string>
+    <string name="input_hint">Входной текст...</string>
+
+    <string name="no_choose">Пожалуйста, выберите изображение для редактирования</string>
+    <string name="auto_newline">АвтоНовыйлайн</string>
+    <string name="save_error">Сохраните ошибку!</string>
+    <string name="handing">- погрузка...</string>
+
+    <string-array name="filters">
+        <item>1. Происхождение</item>
+        <item>Мягкие и мягкие</item>
+        <item>Черный цвет кожи</item>
+        <item>В классическом стиле</item>
+        <item>С ума сойти!</item>
+        <item>3. Ретро</item>
+        <item>- Грейс. - привет.</item>
+        <item>Фильм о фильме</item>
+        <item>Память о нас</item>
+        <item>Йогурт (йогурт)</item>
+        <item>- мимолетное путешествие.</item>
+        <item>- светит Солнце.</item>
+        <item>Дизайн и дизайн</item>
+    </string-array>
+
+    <string name="more">Более подробная информация</string>
+    <string name="exit_without_save">Отредактированное изображение не сохраняется. Ты хочешь уйти\?</string>
+    <string name="confirm">3. Подтверждение:</string>
+    <string name="cancel">Все в силе</string>
+
+    <string name="beauty">- красота!</string>
+    <string name="smooth">- без проблем</string>
+    <string name="white_skin">Белая кожа;</string>
+    <string name="app_name">ИзображениеПравитьБиблиотека</string>
+</resources>

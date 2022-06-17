@@ -1,0 +1,54 @@
+<resources>
+    <string name="no_images">no found 이미지를 찾을 수 없음</string>
+    <string name="images">이미지% d</string>
+    <string name="save">저장</string>
+    <string name="apply">적용</string>
+
+    <string name="stickers">스티커</string>
+    <string name="filter">필터</string>
+    <string name="crop">작물</string>
+    <string name="rotate">회전</string>
+    <string name="text">텍스트</string>
+    <string name="edit">편집</string>
+
+
+
+    <string name="materialcolorpicker__app_name">Android Color Picker Material dialogue</string>
+    <string name="materialcolorpicker__descLib">Color Picker Material dialogue</string>
+    <string name="materialcolorpicker__errHex">육각 코드 형식이 잘못되었습니다</string>
+    <string name="materialcolorpicker__inputColor">색:</string>
+    <string name="materialcolorpicker__btnSelectColor">선택</string>
+    <string name="saving_image">저장 …</string>
+    <string name="input_hint">입력 텍스트...</string>
+
+    <string name="no_choose">편집할 이미지를 선택하십시오</string>
+    <string name="auto_newline">자동 변환</string>
+    <string name="save_error">저장 오류!</string>
+    <string name="handing">로드 …</string>
+
+    <string-array name="filters">
+        <item>기원</item>
+        <item>부 드러 운</item>
+        <item>검은</item>
+        <item>고전적인</item>
+        <item>멋 진</item>
+        <item>복고풍</item>
+        <item>그레이스</item>
+        <item>영화</item>
+        <item>메모리</item>
+        <item>요구르트</item>
+        <item>덧없는 것</item>
+        <item>샤인</item>
+        <item>모자이크</item>
+    </string-array>
+
+    <string name="more">더</string>
+    <string name="exit_without_save">편집한 이미지가 저장되지 않습니다.나가시겠어요\?</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+
+    <string name="beauty">아름다움</string>
+    <string name="smooth">부 드러 워 질</string>
+    <string name="white_skin">하얀 피부</string>
+    <string name="app_name">이미지편집라이브러리</string>
+</resources>

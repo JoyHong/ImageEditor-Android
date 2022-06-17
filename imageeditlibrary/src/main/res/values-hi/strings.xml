@@ -1,0 +1,54 @@
+<resources>
+    <string name="no_images">कोई छवि नहीं मिली</string>
+    <string name="images">%d छवियाँ</string>
+    <string name="save">रक्षा कर</string>
+    <string name="apply">लागू करना</string>
+
+    <string name="stickers">स्टिकर</string>
+    <string name="filter">छानना</string>
+    <string name="crop">पैदावार</string>
+    <string name="rotate">घूमना</string>
+    <string name="text">टेक्स्ट</string>
+    <string name="edit">संपादन करना</string>
+
+
+
+    <string name="materialcolorpicker__app_name">Android सामग्री रंग पिकर संवाद</string>
+    <string name="materialcolorpicker__descLib">सामग्री रंग पिकर संवाद</string>
+    <string name="materialcolorpicker__errHex">हेक्स कोड स्वरूप गलत</string>
+    <string name="materialcolorpicker__inputColor">रंग:</string>
+    <string name="materialcolorpicker__btnSelectColor">चुनना</string>
+    <string name="saving_image">रक्षा कर।।।</string>
+    <string name="input_hint">इनपुट पाठ ...</string>
+
+    <string name="no_choose">कृपया संपादित करने के लिए एक छवि चुनें</string>
+    <string name="auto_newline">स्वत: न्यूलाइन</string>
+    <string name="save_error">त्रुटि सहेजें!</string>
+    <string name="handing">लोड।।।</string>
+
+    <string-array name="filters">
+        <item>मूल</item>
+        <item>नरम</item>
+        <item>काला</item>
+        <item>क्लासिक</item>
+        <item>भडकीला</item>
+        <item>रेट्रो</item>
+        <item>कृपा</item>
+        <item>फ़िल्म</item>
+        <item>याद</item>
+        <item>दही</item>
+        <item>क्षणभंगुर</item>
+        <item>चमकना</item>
+        <item>पच्चीकारी</item>
+    </string-array>
+
+    <string name="more">अधिक</string>
+    <string name="exit_without_save">संपादित छवि सहेजी नहीं गई है. क्या आप बाहर निकलना चाहते हैं\?</string>
+    <string name="confirm">पुष्टि</string>
+    <string name="cancel">रद्द करना</string>
+
+    <string name="beauty">सुंदरता</string>
+    <string name="smooth">चिकना</string>
+    <string name="white_skin">सफेद त्वचा</string>
+    <string name="app_name">ImageEditLibrary</string>
+</resources>

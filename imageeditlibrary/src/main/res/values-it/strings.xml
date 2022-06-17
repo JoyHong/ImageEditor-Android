@@ -1,0 +1,54 @@
+<resources>
+    <string name="no_images">Nessuna immagine trovata</string>
+    <string name="images">%d immagini</string>
+    <string name="save">salva</string>
+    <string name="apply">applica</string>
+
+    <string name="stickers">adesivi</string>
+    <string name="filter">filtro</string>
+    <string name="crop">coltura</string>
+    <string name="rotate">ruota</string>
+    <string name="text">testo</string>
+    <string name="edit">modifica</string>
+
+
+
+    <string name="materialcolorpicker__app_name">Finestra di dialogo prelievo colore Android</string>
+    <string name="materialcolorpicker__descLib">Finestra di selezione colore materiale</string>
+    <string name="materialcolorpicker__errHex">Formato esadecimale non corretto</string>
+    <string name="materialcolorpicker__inputColor">Colore:</string>
+    <string name="materialcolorpicker__btnSelectColor">seleziona</string>
+    <string name="saving_image">Salva...</string>
+    <string name="input_hint">Testo di input...</string>
+
+    <string name="no_choose">Scegli un’ immagine da modificare</string>
+    <string name="auto_newline">AutoNewline</string>
+    <string name="save_error">Errore di salvataggio!</string>
+    <string name="handing">Caricamento...</string>
+
+    <string-array name="filters">
+        <item>origine</item>
+        <item>morbida</item>
+        <item>nero</item>
+        <item>classico</item>
+        <item>stupenda</item>
+        <item>retrò</item>
+        <item>grazia</item>
+        <item>pellicola</item>
+        <item>memoria</item>
+        <item>iogurt</item>
+        <item>fugace</item>
+        <item>brillamento</item>
+        <item>mosaico</item>
+    </string-array>
+
+    <string name="more">più</string>
+    <string name="exit_without_save">L’immagine modificata non è salvata. Vuoi uscire\?</string>
+    <string name="confirm">conferma</string>
+    <string name="cancel">annulla</string>
+
+    <string name="beauty">bellezza</string>
+    <string name="smooth">liscia</string>
+    <string name="white_skin">Pelle bianca</string>
+    <string name="app_name">ImageEditLibrary</string>
+</resources>
