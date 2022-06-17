@@ -4,6 +4,7 @@
     <application>
         <!--图片编辑Activity-->
         <activity
+            android:theme="@style/AppThemeNoActionBar"
             android:name="com.xinlan.imageeditlibrary.editimage.EditImageActivity">
         </activity>
     </application>
