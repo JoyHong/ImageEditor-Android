@@ -4,4 +4,10 @@
         <item name="android:windowExitAnimation">@anim/menuhide</item>
     </style>
 
+    <style name="seek_bar_style">
+        <item name="android:maxHeight">@dimen/seek_bar_height</item>
+        <item name="android:minHeight">@dimen/seek_bar_height</item>
+        <item name="android:progressDrawable">@drawable/seekbar_bg</item>
+    </style>
+
 </resources>

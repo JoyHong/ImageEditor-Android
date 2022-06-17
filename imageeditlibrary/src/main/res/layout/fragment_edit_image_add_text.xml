@@ -18,7 +18,8 @@
         android:hint="@string/input_hint"
         android:paddingLeft="8dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
+        android:textSize="@dimen/image_edit_text_size"
+        android:textColorHint="@color/materialcolorpicker__grey"/>
 
     <CheckBox
         android:id="@+id/check_auto_newline"

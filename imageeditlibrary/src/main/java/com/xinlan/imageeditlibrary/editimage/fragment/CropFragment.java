@@ -97,7 +97,7 @@ public class CropFragment extends BaseEditFragment {
 		for (int i = 0, len = dataList.size(); i < len; i++) {
 			TextView text = new TextView(activity);
 			text.setTextColor(UNSELECTED_COLOR);
-			text.setTextSize(20);
+			text.setTextSize(16);
 			text.setText(dataList.get(i).getText());
 			textViewList.add(text);
 			ratioList.addView(text, params);

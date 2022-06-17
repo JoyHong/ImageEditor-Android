@@ -30,13 +30,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/smooth"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="@dimen/image_edit_text_size" />
 
             <SeekBar
                 android:id="@+id/smooth_value_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                style="@style/seek_bar_style"
                 android:max="500" />
         </LinearLayout>
 
@@ -51,13 +52,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/white_skin"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="@dimen/image_edit_text_size" />
 
             <SeekBar
                 android:id="@+id/white_skin_value_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                style="@style/seek_bar_style"
                 android:max="10" />
         </LinearLayout>
 

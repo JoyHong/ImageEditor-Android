@@ -131,7 +131,7 @@ public class FilterListFragment extends BaseEditFragment {
         for (int i = 0, len = fliters.length; i < len; i++) {
             TextView text = new TextView(activity);
             text.setTextColor(Color.WHITE);
-            text.setTextSize(20);
+            text.setTextSize(16);
             text.setText(fliters[i]);
             mFilterGroup.addView(text, params);
             text.setTag(i);
