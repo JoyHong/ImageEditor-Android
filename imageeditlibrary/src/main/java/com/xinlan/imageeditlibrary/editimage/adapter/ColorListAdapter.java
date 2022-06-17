@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 
 import com.xinlan.imageeditlibrary.R;
 import com.xinlan.imageeditlibrary.editimage.fragment.PaintFragment;
+import com.xinlan.imageeditlibrary.editimage.model.PaintColorBean;
+
+import java.util.ArrayList;
 
 
 /**
@@ -26,6 +29,7 @@ public class ColorListAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     private PaintFragment mContext;
     private int[] colorsData;
+    private ArrayList<PaintColorBean> colorList;
 
     private IColorListAction mCallback;
 
@@ -37,9 +41,15 @@ public class ColorListAdapter extends RecyclerView.Adapter<ViewHolder> {
         this.mCallback = action;
     }
 
+    public ColorListAdapter(PaintFragment frg, ArrayList<PaintColorBean> colorList, IColorListAction action) {
+        super();
+        this.mContext = frg;
+        this.colorList = colorList;
+        this.mCallback = action;
+    }
+
     public class ColorViewHolder extends ViewHolder {
         View colorPanelView;
-
         public ColorViewHolder(View itemView) {
             super(itemView);
             this.colorPanelView = itemView.findViewById(R.id.color_panel_view);
@@ -57,12 +67,12 @@ public class ColorListAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return colorsData.length + 1;
+        return colorList.size() + 1;
     }
 
     @Override
     public int getItemViewType(int position) {
-        return colorsData.length == position ? TYPE_MORE : TYPE_COLOR;
+        return colorList.size() == position ? TYPE_MORE : TYPE_COLOR;
     }
 
     @Override
@@ -92,16 +102,34 @@ public class ColorListAdapter extends RecyclerView.Adapter<ViewHolder> {
         }
     }
 
+    private int perSelectedPosition = -1;
     private void onBindColorViewHolder(final ColorViewHolder holder,final int position){
-        holder.colorPanelView.setBackgroundColor(colorsData[position]);
+//        holder.colorPanelView.setBackgroundColor(colorsData[position]);
+        holder.colorPanelView.setBackgroundColor(colorList.get(position).color);
+        if (colorList.get(position).selected){
+            holder.colorPanelView.setScaleX(1.2f);
+            holder.colorPanelView.setScaleY(1.2f);
+        }else {
+            holder.colorPanelView.setScaleX(1.0f);
+            holder.colorPanelView.setScaleY(1.0f);
+        }
+
         holder.colorPanelView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(mCallback!=null){
-                    mCallback.onColorSelected(position,colorsData[position]);
+                    mCallback.onColorSelected(position,colorList.get(position).color);
+                    colorList.get(position).selected = true;
+                    if (perSelectedPosition != -1){
+                        colorList.get(perSelectedPosition).selected = false;
+                    }
+                    perSelectedPosition = position;
+                    notifyDataSetChanged();
                 }
             }
         });
+
+
     }
 
     private void onBindColorMoreViewHolder(final MoreViewHolder holder,final int position){

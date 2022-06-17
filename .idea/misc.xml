@@ -4,12 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="demo/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="demo/src/main/res/menu/menu_main.xml" value="0.1734375" />
         <entry key="imageeditlibrary/src/main/res/drawable/seekbar_bg.xml" value="0.1245" />
         <entry key="imageeditlibrary/src/main/res/layout/activity_image_edit.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/fragment_edit_image_add_text.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/fragment_edit_image_beauty.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/fragment_edit_image_rotate.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/fragment_edit_paint.xml" value="0.1" />
+        <entry key="imageeditlibrary/src/main/res/layout/view_color_panel.xml" value="0.55" />
         <entry key="imageeditlibrary/src/main/res/layout/view_set_stoke_width.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/view_sticker_type_item.xml" value="0.10099637681159421" />
       </map>

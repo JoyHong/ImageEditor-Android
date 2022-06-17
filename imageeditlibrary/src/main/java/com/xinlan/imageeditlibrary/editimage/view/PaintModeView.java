@@ -15,6 +15,7 @@ import android.view.View;
 
 public class PaintModeView extends View {
     private Paint mPaint;
+    private Paint mSidePaint;
 
     private int mStokeColor;
     private float mStokeWidth = -1;
@@ -47,6 +48,10 @@ public class PaintModeView extends View {
         mPaint.setAntiAlias(true);
         mPaint.setColor(Color.RED);
 
+
+        mSidePaint = new Paint();
+        mSidePaint.setAntiAlias(true);
+        mSidePaint.setColor(Color.DKGRAY);
         //mStokeWidth = 10;
         //mStokeColor = Color.RED;
     }
@@ -57,6 +62,7 @@ public class PaintModeView extends View {
         mPaint.setColor(mStokeColor);
         mRadius = mStokeWidth / 2;
 
+        canvas.drawCircle(getWidth() >> 1, getHeight() >> 1, mRadius + 5, mSidePaint);
         canvas.drawCircle(getWidth() >> 1, getHeight() >> 1, mRadius, mPaint);
     }
 

@@ -22,10 +22,13 @@ import com.xinlan.imageeditlibrary.R;
 import com.xinlan.imageeditlibrary.editimage.EditImageActivity;
 import com.xinlan.imageeditlibrary.editimage.ModuleConfig;
 import com.xinlan.imageeditlibrary.editimage.adapter.ColorListAdapter;
+import com.xinlan.imageeditlibrary.editimage.model.PaintColorBean;
 import com.xinlan.imageeditlibrary.editimage.task.StickerTask;
 import com.xinlan.imageeditlibrary.editimage.ui.ColorPicker;
 import com.xinlan.imageeditlibrary.editimage.view.CustomPaintView;
 import com.xinlan.imageeditlibrary.editimage.view.PaintModeView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -63,6 +66,8 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
             Color.DKGRAY, Color.GRAY, Color.LTGRAY, Color.WHITE,
             Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW, Color.CYAN, Color.MAGENTA};
 
+    public ArrayList<PaintColorBean> mPaintColorList = new ArrayList<PaintColorBean>();
+
     public static PaintFragment newInstance() {
         PaintFragment fragment = new PaintFragment();
         return fragment;
@@ -72,6 +77,7 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mainView = inflater.inflate(R.layout.fragment_edit_paint, null);
+
         return mainView;
     }
 
@@ -108,7 +114,12 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
         stickerListLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         mColorListView.setLayoutManager(stickerListLayoutManager);
-        mColorAdapter = new ColorListAdapter(this, mPaintColors, this);
+
+        for (int mPaintColor : mPaintColors) {
+            mPaintColorList.add(new PaintColorBean(mPaintColor,false));
+        }
+
+        mColorAdapter = new ColorListAdapter(this, mPaintColorList, this);
         mColorListView.setAdapter(mColorAdapter);
 
 
@@ -233,7 +244,7 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
 
 
         mPaintModeView.setPaintStrokeColor(Color.RED);
-        mPaintModeView.setPaintStrokeWidth(10);
+        mPaintModeView.setPaintStrokeWidth(20);
 
         updatePaintView();
     }

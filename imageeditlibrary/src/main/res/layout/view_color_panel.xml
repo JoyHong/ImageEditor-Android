@@ -1,5 +1,25 @@
-<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.makeramen.roundedimageview.RoundedImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/color_panel_view"
-    android:layout_margin="4dp"
     android:layout_width="25dp"
-    android:layout_height="25dp" />
+    android:layout_height="25dp"
+    android:layout_margin="4dp"
+    app:riv_border_color="#333333"
+    app:riv_border_width="2dip"
+    app:riv_corner_radius="12dp"
+    app:riv_mutate_background="true"
+    app:riv_oval="true"
+    app:riv_tile_mode="repeat" />
+
+
+    <!--<com.makeramen.roundedimageview.RoundedImageView-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/imageView1"-->
+    <!--android:src="@drawable/photo1"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--app:riv_corner_radius="30dip"-->
+    <!--app:riv_border_width="2dip"-->
+    <!--app:riv_border_color="#333333"-->
+    <!--app:riv_mutate_background="true"-->
+    <!--app:riv_tile_mode="repeat"-->
+    <!--app:riv_oval="true" />-->
