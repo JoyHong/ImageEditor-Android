@@ -37,6 +37,8 @@
             android:max="255"
             android:maxHeight="3dip"
             android:minHeight="3dip"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
             android:progressDrawable="@drawable/red_progress"
             android:thumbTint="@android:color/holo_red_light"/>
 
@@ -58,6 +60,8 @@
             android:max="255"
             android:maxHeight="3dip"
             android:minHeight="3dip"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
             android:progressDrawable="@drawable/materialcolorpicker__green_progress"
             android:thumbTint="@android:color/holo_green_light"/>
 
@@ -79,17 +83,19 @@
             android:max="255"
             android:maxHeight="3dip"
             android:minHeight="3dip"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
             android:progressDrawable="@drawable/materialcolorpicker__blue_progress"
             android:thumbTint="@android:color/holo_blue_light"/>
 
         <EditText
             android:id="@+id/codHex"
-            android:layout_width="70dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_alignParentBottom="false"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="false"
             android:layout_below="@+id/blueSeekBar"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="false"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
             android:hint="2c45ff"
@@ -101,18 +107,20 @@
             android:textAllCaps="false"
             android:textColor="@color/primary_text_default_material_light"
             android:textColorHint="@color/hint_foreground_material_light"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/image_edit_text_size" />
 
         <Button
             android:id="@+id/okColorButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/codHex"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_color_selected_btn"
+            android:textColor="@color/white"
             android:clickable="true"
-            android:text="@string/materialcolorpicker__btnSelectColor"/>
+            android:text="@string/materialcolorpicker__btnSelectColor" />
 
     </RelativeLayout>
 
