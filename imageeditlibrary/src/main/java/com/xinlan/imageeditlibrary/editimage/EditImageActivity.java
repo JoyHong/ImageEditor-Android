@@ -5,6 +5,9 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.RectF;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -42,6 +45,8 @@ import com.xinlan.imageeditlibrary.editimage.utils.BitmapUtils;
 import com.xinlan.imageeditlibrary.editimage.view.imagezoom.ImageViewTouchBase;
 import com.xinlan.imageeditlibrary.editimage.widget.RedoUndoController;
 
+import java.io.FileOutputStream;
+
 /**
  * <p>
  * 图片编辑 主页面
@@ -52,6 +57,11 @@ import com.xinlan.imageeditlibrary.editimage.widget.RedoUndoController;
  *         add new modules
  */
 public class EditImageActivity extends BaseActivity {
+    public static final String EXTRA_IMAGE_URI = "image_uri";
+
+    public static final String EXTRA_IMAGE_SAVE_PATH = "image_save_path";
+
+
     public static final String FILE_PATH = "file_path";
     public static final String EXTRA_OUTPUT = "extra_output";
     public static final String SAVE_FILE_PATH = "save_file_path";
@@ -438,9 +448,24 @@ public class EditImageActivity extends BaseActivity {
         returnIntent.putExtra(EXTRA_OUTPUT, saveFilePath);
         returnIntent.putExtra(IMAGE_IS_EDIT, mOpTimes > 0);
 
-        FileUtil.ablumUpdate(this, saveFilePath);
+//        FileUtil.ablumUpdate(this, saveFilePath);
         setResult(RESULT_OK, returnIntent);
         finish();
+    }
+
+    private boolean savePicture() {
+        String path = getIntent().getStringExtra(EXTRA_IMAGE_SAVE_PATH);
+        if (!TextUtils.isEmpty(path)) {
+            Bitmap bitmap = mainBitmap;
+            if (bitmap != null) {
+                try (FileOutputStream fout = new FileOutputStream(path)) {
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 80, fout);
+                } catch (Throwable ignored) {
+                }
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -494,5 +519,6 @@ public class EditImageActivity extends BaseActivity {
     public Bitmap getMainBit() {
         return mainBitmap;
     }
+
 
 }// end class
