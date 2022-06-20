@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     buildToolsVersion '28.0.3'
 
     defaultConfig {
@@ -16,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 //    externalNativeBuild {
 //        ndkBuild {
 //            path 'jni/Android.mk'
@@ -49,3 +50,6 @@ task sourcesJar(type: Jar) {
     classifier = 'sources'
     from sourceSets.main.java, sourceSets.main.resources
 }
+
+
+
