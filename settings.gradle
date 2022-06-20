@@ -1,3 +1,5 @@
-include ':demo', ':imageeditlibrary'
+//include ':demo', ':imageeditlibrary'
+include ':demo'
 
+include 'imageeditlibrary'
 project(':imageeditlibrary').projectDir = new File('imageeditlibrary')
