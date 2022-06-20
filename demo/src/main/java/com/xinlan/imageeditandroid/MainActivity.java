@@ -2,8 +2,11 @@ package com.xinlan.imageeditandroid;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private View editImage;//
     private Bitmap mainBitmap;
     private int imageWidth, imageHeight;//
-    private String path;
+    private Uri path;
 
 
     private View mTakenPhoto;//拍摄照片用于编辑
@@ -214,7 +217,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void handleTakePhoto(Intent data) {
         if (photoURI != null) {//拍摄成功
-            path = photoURI.getPath();
+            path = photoURI;
+            System.out.println("====" + photoURI.getPath());
             startLoadTask();
         }
     }
@@ -226,22 +230,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (isImageEdit){
             Toast.makeText(this, getString(R.string.save_path, newFilePath), Toast.LENGTH_LONG).show();
         }else{//未编辑  还是用原来的图片
-            newFilePath = data.getStringExtra(EditImageActivity.FILE_PATH);;
+            newFilePath = data.getParcelableExtra(EditImageActivity.FILE_PATH);;
         }
         //System.out.println("newFilePath---->" + newFilePath);
         //File file = new File(newFilePath);
         //System.out.println("newFilePath size ---->" + (file.length() / 1024)+"KB");
         Log.d("image is edit", isImageEdit + "");
+
+
         LoadImageTask loadTask = new LoadImageTask();
-        loadTask.execute(newFilePath);
+        loadTask.execute(getImageContentUri(this,new File(newFilePath)));
     }
 
     private void handleSelectFromAblum(Intent data) {
         String filepath = data.getStringExtra("imgPath");
-        path = filepath;
-        // System.out.println("path---->"+path);
+        System.out.println("filepath---->"+filepath);
+        path = getImageContentUri(this,new File(filepath));
+//        path = filepath;
+         System.out.println("path---->"+path);
         startLoadTask();
     }
+
+
+    public static Uri getImageContentUri(Context context, java.io.File imageFile) {
+        String filePath = imageFile.getAbsolutePath();
+        Cursor cursor = context.getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                new String[] { MediaStore.Images.Media._ID }, MediaStore.Images.Media.DATA + "=? ",
+                new String[] { filePath }, null);
+        if (cursor != null && cursor.moveToFirst()) {
+            int id = cursor.getInt(cursor.getColumnIndex(MediaStore.MediaColumns._ID));
+            Uri baseUri = Uri.parse("content://media/external/images/media");
+            return Uri.withAppendedPath(baseUri, "" + id);
+        } else {
+            if (imageFile.exists()) {
+                ContentValues values = new ContentValues();
+                values.put(MediaStore.Images.Media.DATA, filePath);
+                return context.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+            } else {
+                return null;
+            }
+        }
+    }
+
 
     private void startLoadTask() {
         LoadImageTask task = new LoadImageTask();
@@ -249,10 +279,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    private final class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
+    private final class LoadImageTask extends AsyncTask<Uri, Void, Bitmap> {
         @Override
-        protected Bitmap doInBackground(String... params) {
-            return BitmapUtils.getSampledBitmap(params[0], imageWidth / 4, imageHeight / 4);
+        protected Bitmap doInBackground(Uri... params) {
+            return BitmapUtils.getSampledBitmap(MainActivity.this,params[0], imageWidth / 4, imageHeight / 4);
         }
 
         @Override

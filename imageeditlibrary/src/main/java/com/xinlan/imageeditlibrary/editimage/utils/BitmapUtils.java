@@ -25,6 +25,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -34,11 +35,21 @@ import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory.Options;
 import android.graphics.drawable.Drawable;
 import android.media.ExifInterface;
+import android.net.Uri;
 import android.os.Environment;
+import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.util.FloatMath;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
+
+import com.xinlan.imageeditlibrary.editimage.file.PictureAssetFileDecoder;
+import com.xinlan.imageeditlibrary.editimage.file.PictureContentDecoder;
+import com.xinlan.imageeditlibrary.editimage.file.PictureDecoder;
+import com.xinlan.imageeditlibrary.editimage.file.PictureDefaultDecoder;
+import com.xinlan.imageeditlibrary.editimage.file.PictureFileDecoder;
 
 /**
  * BitmapUtils
@@ -387,18 +398,53 @@ public class BitmapUtils {
         return resizeBitmap( input, destWidth, destHeight, 0 );
     }
 
-    public static Bitmap getSampledBitmap(String filePath, int reqWidth, int reqHeight) {
+    public static Bitmap getSampledBitmap(Context context,Uri uri, int reqWidth, int reqHeight) {
+        PictureDecoder decoder = null;
+
+        String path = uri.getPath();
+        if (!TextUtils.isEmpty(path)) {
+            switch (uri.getScheme()) {
+                case "asset":
+                    decoder = new PictureAssetFileDecoder(context, uri);
+                    break;
+                case "file":
+                    decoder = new PictureFileDecoder(uri);
+                    break;
+                case "content":
+                    decoder = new PictureContentDecoder(context, uri);
+                    break;
+                default:
+                    decoder = new PictureDefaultDecoder(context, uri);
+                    break;
+            }
+        }
+
+        if (decoder == null) {
+            return null;
+        }
+
         BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inSampleSize = 1;
         options.inJustDecodeBounds = true;
-        options.inPreferredConfig = Bitmap.Config.ARGB_8888;
-        BitmapFactory.decodeFile(filePath, options);
-        int inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
-        options.inSampleSize = inSampleSize;
+
+        decoder.decode(options);
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        wm.getDefaultDisplay().getRealMetrics(metrics);
+
+        if (options.outWidth > metrics.widthPixels) {
+            options.inSampleSize = PictureUtils.inSampleSize(Math.round(1f * options.outWidth / metrics.widthPixels));
+        }
+
+        if (options.outHeight > metrics.heightPixels) {
+            options.inSampleSize = Math.max(options.inSampleSize,
+                    PictureUtils.inSampleSize(Math.round(1f * options.outHeight / metrics.heightPixels)));
+        }
+
         options.inJustDecodeBounds = false;
 
-        final Bitmap retBit = BitmapFactory.decodeFile(filePath, options);
-        final int degree = readPictureDegree(filePath);
-        return degree > 0?rotateBitmap(degree , retBit):retBit;
+        return PictureUtils.rotateBitmap(decoder.decode(options), PictureUtils.getBitmapDegree(context, uri));
     }
 
 

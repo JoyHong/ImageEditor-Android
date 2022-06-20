@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -66,7 +67,7 @@ public class EditImageActivity extends BaseActivity {
     public static final int MODE_PAINT = 6;//绘制模式
     public static final int MODE_BEAUTY = 7;//美颜模式
 
-    public String filePath;// 需要编辑图片路径
+    public Uri filePath;// 需要编辑图片路径
     public String saveFilePath;// 生成的新图片路径
     private int imageWidth, imageHeight;// 展示图片控件 宽 高
     private LoadImageTask mLoadImageTask;
@@ -111,8 +112,8 @@ public class EditImageActivity extends BaseActivity {
      * @param outputPath
      * @param requestCode
      */
-    public static void start(Activity context, final String editImagePath, final String outputPath, final int requestCode) {
-        if (TextUtils.isEmpty(editImagePath)) {
+    public static void start(Activity context, final Uri editImagePath, final String outputPath, final int requestCode) {
+        if (TextUtils.isEmpty(editImagePath.getPath())) {
             Toast.makeText(context, R.string.no_choose, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -133,7 +134,7 @@ public class EditImageActivity extends BaseActivity {
     }
 
     private void getData() {
-        filePath = getIntent().getStringExtra(FILE_PATH);
+        filePath = getIntent().getParcelableExtra(FILE_PATH);
         saveFilePath = getIntent().getStringExtra(EXTRA_OUTPUT);// 保存图片路径
         loadImage(filePath);
     }
@@ -249,7 +250,7 @@ public class EditImageActivity extends BaseActivity {
      *
      * @param filepath
      */
-    public void loadImage(String filepath) {
+    public void loadImage(Uri filepath) {
         if (mLoadImageTask != null) {
             mLoadImageTask.cancel(true);
         }
@@ -260,10 +261,10 @@ public class EditImageActivity extends BaseActivity {
     /**
      * 导入文件图片任务
      */
-    private final class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
+    private final class LoadImageTask extends AsyncTask<Uri, Void, Bitmap> {
         @Override
-        protected Bitmap doInBackground(String... params) {
-            return BitmapUtils.getSampledBitmap(params[0], imageWidth,
+        protected Bitmap doInBackground(Uri... params) {
+            return BitmapUtils.getSampledBitmap(EditImageActivity.this,params[0], imageWidth,
                     imageHeight);
         }
 
