@@ -33,3 +33,19 @@ dependencies {
     api 'androidx.appcompat:appcompat:1.0.0'
     api 'com.makeramen:roundedimageview:2.3.0'
 }
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/res'
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.java, sourceSets.main.resources
+}
