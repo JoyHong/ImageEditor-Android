@@ -1,1 +1,3 @@
 include ':demo', ':imageeditlibrary'
+
+project(':imageeditlibrary').projectDir = new File('imageeditlibrary')
