@@ -50,7 +50,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_green_light"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/greenSeekBar"
@@ -73,7 +73,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_blue_light"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/blueSeekBar"
@@ -112,15 +112,17 @@
         <Button
             android:id="@+id/okColorButton"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/codHex"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:background="@drawable/shape_color_selected_btn"
-            android:textColor="@color/white"
             android:clickable="true"
+            android:minHeight="30dp"
             android:text="@string/materialcolorpicker__btnSelectColor"
+            android:gravity="center"
+            android:textColor="@color/white"
             android:textSize="@dimen/image_edit_text_size" />
 
     </RelativeLayout>

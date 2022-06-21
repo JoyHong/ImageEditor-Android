@@ -27,7 +27,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_red_light"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/redSeekBar"
@@ -50,7 +50,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_green_light"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/greenSeekBar"
@@ -73,25 +73,25 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_blue_light"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/blueSeekBar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/blueToolTip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:max="255"
             android:maxHeight="3dip"
             android:minHeight="3dip"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
             android:progressDrawable="@drawable/materialcolorpicker__blue_progress"
-            android:thumbTint="@android:color/holo_blue_light"/>
+            android:thumbTint="@android:color/holo_blue_light" />
 
         <EditText
             android:id="@+id/codHex"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/blueSeekBar"
             android:layout_alignParentStart="false"
             android:layout_alignParentLeft="true"
@@ -113,14 +113,16 @@
             android:id="@+id/okColorButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="30dp"
             android:layout_alignBaseline="@+id/codHex"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:background="@drawable/shape_color_selected_btn"
-            android:textColor="@color/white"
             android:clickable="true"
-            android:text="@string/materialcolorpicker__btnSelectColor" />
+            android:gravity="center"
+            android:text="@string/materialcolorpicker__btnSelectColor"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 
