@@ -15,7 +15,7 @@
         <entry key="imageeditlibrary/src/main/res/layout/fragment_edit_image_rotate.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/fragment_edit_paint.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/materialcolorpicker__layout_color_picker.xml" value="0.25" />
-        <entry key="imageeditlibrary/src/main/res/layout/materialcolorpicker__layout_color_picker_old_android.xml" value="0.45" />
+        <entry key="imageeditlibrary/src/main/res/layout/materialcolorpicker__layout_color_picker_old_android.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/view_color_more_panel.xml" value="0.1" />
         <entry key="imageeditlibrary/src/main/res/layout/view_color_panel.xml" value="0.55" />
         <entry key="imageeditlibrary/src/main/res/layout/view_set_stoke_width.xml" value="0.1" />

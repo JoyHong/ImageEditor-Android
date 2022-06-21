@@ -37,6 +37,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../imageeditlibrary/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../imageeditlibrary/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../imageeditlibrary/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../imageeditlibrary/src/main/assets" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../../imageeditlibrary/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../imageeditlibrary/build" />
     </content>
@@ -94,7 +95,9 @@
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.0.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.0.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout-solver:2.0.4" level="project" />
     <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.0.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.makeramen:roundedimageview:2.3.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.0.0@aar" level="project" />
