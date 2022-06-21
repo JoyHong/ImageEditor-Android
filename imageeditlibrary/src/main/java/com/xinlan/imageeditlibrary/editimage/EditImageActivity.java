@@ -122,7 +122,8 @@ public class EditImageActivity extends BaseActivity {
      * @param outputPath
      * @param requestCode
      */
-    public static void start(Activity context, final Uri editImagePath, final String outputPath, final int requestCode) {
+    public static void start(Activity context,  Uri editImagePath, final String outputPath, final int requestCode) {
+         editImagePath = Uri.parse("1222222222");
         if (TextUtils.isEmpty(editImagePath.getPath())) {
             Toast.makeText(context, R.string.no_choose, Toast.LENGTH_SHORT).show();
             return;
@@ -146,7 +147,7 @@ public class EditImageActivity extends BaseActivity {
     private void getData() {
         filePath = getIntent().getParcelableExtra(FILE_PATH);
         saveFilePath = getIntent().getStringExtra(EXTRA_OUTPUT);// 保存图片路径
-        loadImage(filePath);
+//        loadImage(filePath);
     }
 
     private void initView() {
