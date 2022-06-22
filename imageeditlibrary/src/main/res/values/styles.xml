@@ -1,26 +1,26 @@
 <resources>
     <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="colorPrimary">@color/image_editor_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/image_editor_colorPrimaryDark</item>
+        <item name="colorAccent">@color/image_editor_colorAccent</item>
+        <item name="android:textColorPrimary">@color/image_editor_colorAccent</item>
 
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@color/main_backgroud</item>
+        <item name="android:windowBackground">@color/image_editor_main_backgroud</item>
     </style>
 
 
     <style name="popwin_anim_style">
-        <item name="android:windowEnterAnimation">@anim/menushow</item>
-        <item name="android:windowExitAnimation">@anim/menuhide</item>
+        <item name="android:windowEnterAnimation">@anim/image_editor_menushow</item>
+        <item name="android:windowExitAnimation">@anim/image_editor_menuhide</item>
     </style>
 
     <style name="seek_bar_style">
-        <item name="android:maxHeight">@dimen/seek_bar_height</item>
-        <item name="android:minHeight">@dimen/seek_bar_height</item>
-        <item name="android:progressDrawable">@drawable/seekbar_bg</item>
+        <item name="android:maxHeight">@dimen/image_editor_seek_bar_height</item>
+        <item name="android:minHeight">@dimen/image_editor_seek_bar_height</item>
+        <item name="android:progressDrawable">@drawable/image_editor_seekbar_bg</item>
     </style>
 
 </resources>

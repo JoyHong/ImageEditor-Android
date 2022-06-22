@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="no_images">Não foi encontrada a imagem</string>
-    <string name="images">%d imagens</string>
-    <string name="save">salvar</string>
-    <string name="apply">aplicar</string>
+    <string name="image_editor_no_images">Não foi encontrada a imagem</string>
+    <string name="image_editor_images">%d imagens</string>
+    <string name="image_editor_save">salvar</string>
+    <string name="image_editor_apply">aplicar</string>
 
-    <string name="stickers">autocolantes</string>
-    <string name="filter">filtro</string>
-    <string name="crop">cultura</string>
-    <string name="rotate">girar</string>
-    <string name="text">texto</string>
-    <string name="edit">editar</string>
+    <string name="image_editor_stickers">autocolantes</string>
+    <string name="image_editor_filter">filtro</string>
+    <string name="image_editor_crop">cultura</string>
+    <string name="image_editor_rotate">girar</string>
+    <string name="image_editor_text">texto</string>
+    <string name="image_editor_edit">editar</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Janela de Selecção de Cores de Material do Android</string>
-    <string name="materialcolorpicker__descLib">Janela do Seletor de Cores do Material</string>
-    <string name="materialcolorpicker__errHex">Formato do Código Hex incorrecto</string>
-    <string name="materialcolorpicker__inputColor">Cor:</string>
-    <string name="materialcolorpicker__btnSelectColor">Seleccionar</string>
-    <string name="saving_image">salvar...</string>
-    <string name="input_hint">texto de entrada ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Janela de Selecção de Cores de Material do Android</string>
+    <string name="image_editor_materialcolorpicker__descLib">Janela do Seletor de Cores do Material</string>
+    <string name="image_editor_materialcolorpicker__errHex">Formato do Código Hex incorrecto</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Cor:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">Seleccionar</string>
+    <string name="image_editor_saving_image">salvar...</string>
+    <string name="image_editor_input_hint">texto de entrada ...</string>
 
-    <string name="no_choose">por favor escolha uma imagem para editar</string>
-    <string name="auto_newline">Linha Nova Automática</string>
-    <string name="save_error">Erro de gravação!</string>
-    <string name="handing">carga...</string>
+    <string name="image_editor_no_choose">por favor escolha uma imagem para editar</string>
+    <string name="image_editor_auto_newline">Linha Nova Automática</string>
+    <string name="image_editor_save_error">Erro de gravação!</string>
+    <string name="image_editor_handing">carga...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>origin</item>
         <item>macio</item>
         <item>preto</item>
@@ -43,14 +43,14 @@
         <item>mosaico</item>
     </string-array>
 
-    <string name="more">mais</string>
-    <string name="exit_without_save">A imagem editada não é gravada. Queres sair? </string>
-    <string name="confirm">confirmar</string>
-    <string name="cancel">cancelar</string>
+    <string name="image_editor_more">mais</string>
+    <string name="image_editor_exit_without_save">A imagem editada não é gravada. Queres sair? </string>
+    <string name="image_editor_confirm">confirmar</string>
+    <string name="image_editor_cancel">cancelar</string>
 
-    <string name="beauty">beleza</string>
-    <string name="smooth">suave</string>
-    <string name="white_skin">pele branca</string>
-    <string name="app_name">Biblioteca de Edição de Imagens</string>
-    <string name="sticker">наклейка</string>
+    <string name="image_editor_beauty">beleza</string>
+    <string name="image_editor_smooth">suave</string>
+    <string name="image_editor_white_skin">pele branca</string>
+    <string name="image_editor_app_name">Biblioteca de Edição de Imagens</string>
+    <string name="image_editor_sticker">наклейка</string>
 </resources>

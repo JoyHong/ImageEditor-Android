@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">kein Bild gefunden</string>
-    <string name="images">%d Bilder</string>
-    <string name="save">sparen</string>
-    <string name="apply">anwenden</string>
+    <string name="image_editor_no_images">kein Bild gefunden</string>
+    <string name="image_editor_images">%d Bilder</string>
+    <string name="image_editor_save">sparen</string>
+    <string name="image_editor_apply">anwenden</string>
 
-    <string name="stickers">Aufkleber</string>
-    <string name="filter">Filter</string>
-    <string name="crop">Ernte</string>
-    <string name="rotate">drehen</string>
-    <string name="text">Text</string>
-    <string name="edit">bearbeiten</string>
+    <string name="image_editor_stickers">Aufkleber</string>
+    <string name="image_editor_filter">Filter</string>
+    <string name="image_editor_crop">Ernte</string>
+    <string name="image_editor_rotate">drehen</string>
+    <string name="image_editor_text">Text</string>
+    <string name="image_editor_edit">bearbeiten</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Dialogfeld für die Farbauswahl von Android-Materialien</string>
-    <string name="materialcolorpicker__descLib">Dialogfeld Materialfarbauswahl</string>
-    <string name="materialcolorpicker__errHex">Hex-Code-Format falsch</string>
-    <string name="materialcolorpicker__inputColor">Farbe:</string>
-    <string name="materialcolorpicker__btnSelectColor">Auswählen</string>
-    <string name="saving_image">sparen...</string>
-    <string name="input_hint">Eingabetext ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Dialogfeld für die Farbauswahl von Android-Materialien</string>
+    <string name="image_editor_materialcolorpicker__descLib">Dialogfeld Materialfarbauswahl</string>
+    <string name="image_editor_materialcolorpicker__errHex">Hex-Code-Format falsch</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Farbe:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">Auswählen</string>
+    <string name="image_editor_saving_image">sparen...</string>
+    <string name="image_editor_input_hint">Eingabetext ...</string>
 
-    <string name="no_choose">Bitte wählen Sie ein Bild zur Bearbeitung aus</string>
-    <string name="auto_newline">Automatischer Zeilenumbruch</string>
-    <string name="save_error">Fehler speichern!</string>
-    <string name="handing">Wird geladen...</string>
+    <string name="image_editor_no_choose">Bitte wählen Sie ein Bild zur Bearbeitung aus</string>
+    <string name="image_editor_auto_newline">Automatischer Zeilenumbruch</string>
+    <string name="image_editor_save_error">Fehler speichern!</string>
+    <string name="image_editor_handing">Wird geladen...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>Ursprung</item>
         <item>Sanft</item>
         <item>Schwarz</item>
@@ -42,14 +42,14 @@
         <item>Mosaik-</item>
     </string-array>
 
-    <string name="more">mehr</string>
-    <string name="exit_without_save">Das bearbeitete Bild wird nicht gespeichert. Möchtest du aussteigen\?</string>
-    <string name="confirm">bestätigen</string>
-    <string name="cancel">Abbrechen</string>
+    <string name="image_editor_more">mehr</string>
+    <string name="image_editor_exit_without_save">Das bearbeitete Bild wird nicht gespeichert. Möchtest du aussteigen\?</string>
+    <string name="image_editor_confirm">bestätigen</string>
+    <string name="image_editor_cancel">Abbrechen</string>
 
-    <string name="beauty">Schönheit</string>
-    <string name="smooth">glatt</string>
-    <string name="white_skin">weiße Haut</string>
-    <string name="app_name">ImageEditLibrary</string>
-    <string name="sticker">Aufkleber</string>
+    <string name="image_editor_beauty">Schönheit</string>
+    <string name="image_editor_smooth">glatt</string>
+    <string name="image_editor_white_skin">weiße Haut</string>
+    <string name="image_editor_app_name">ImageEditLibrary</string>
+    <string name="image_editor_sticker">Aufkleber</string>
 </resources>

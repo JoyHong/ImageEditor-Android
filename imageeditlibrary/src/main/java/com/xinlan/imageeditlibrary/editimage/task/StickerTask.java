@@ -10,7 +10,6 @@ import android.os.Build;
 
 import com.xinlan.imageeditlibrary.R;
 import com.xinlan.imageeditlibrary.editimage.EditImageActivity;
-import com.xinlan.imageeditlibrary.editimage.utils.BitmapUtils;
 import com.xinlan.imageeditlibrary.editimage.utils.Matrix3;
 
 /**
@@ -34,7 +33,7 @@ public abstract class StickerTask extends AsyncTask<Bitmap, Void, Bitmap> {
         if (mContext.isFinishing())
             return;
 
-        dialog = mContext.getLoadingDialog(mContext, R.string.saving_image,
+        dialog = mContext.getLoadingDialog(mContext, R.string.image_editor_saving_image,
                 false);
         dialog.show();
     }

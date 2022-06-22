@@ -72,7 +72,7 @@ public class StickerFragment extends BaseEditFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreateView(inflater,container,savedInstanceState);
-        mainView = inflater.inflate(R.layout.fragment_edit_image_sticker_type,
+        mainView = inflater.inflate(R.layout.image_editor_fragment_edit_image_sticker_type,
                 null);
         //loadStickersData();
 
@@ -84,8 +84,8 @@ public class StickerFragment extends BaseEditFragment {
         super.onActivityCreated(savedInstanceState);
         this.mStickerView = activity.mStickerView;
         flipper = (ViewFlipper) mainView.findViewById(R.id.flipper);
-        flipper.setInAnimation(activity, R.anim.in_bottom_to_top);
-        flipper.setOutAnimation(activity, R.anim.out_bottom_to_top);
+        flipper.setInAnimation(activity, R.anim.image_editor_in_bottom_to_top);
+        flipper.setOutAnimation(activity, R.anim.image_editor_out_bottom_to_top);
 
         //
         backToMenu = mainView.findViewById(R.id.back_to_main);
@@ -142,7 +142,7 @@ public class StickerFragment extends BaseEditFragment {
 
         public LoadStickersTask() {
             super();
-            loadDialog = BaseActivity.getLoadingDialog(getActivity(), R.string.saving_image, false);
+            loadDialog = BaseActivity.getLoadingDialog(getActivity(), R.string.image_editor_saving_image, false);
         }
 
         @Override

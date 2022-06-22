@@ -9,7 +9,7 @@
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:src="@drawable/image_edit_back" />
+        android:src="@drawable/image_editor_image_edit_back" />
 
     <EditText
         android:id="@+id/text_input"
@@ -18,11 +18,11 @@
         android:layout_gravity="center_vertical"
         android:layout_margin="14dp"
         android:layout_weight="1"
-        android:hint="@string/input_hint"
+        android:hint="@string/image_editor_input_hint"
         android:paddingLeft="8dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/materialcolorpicker__grey"
-        android:textSize="@dimen/image_edit_text_size" />
+        android:textColor="@color/image_editor_white"
+        android:textColorHint="@color/image_editor_materialcolorpicker__grey"
+        android:textSize="@dimen/image_editor_image_edit_text_size" />
 
     <CheckBox
         android:id="@+id/check_auto_newline"
@@ -30,8 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_margin="3dp"
-        android:text="@string/auto_newline"
-        android:textColor="@color/white"
+        android:text="@string/image_editor_auto_newline"
+        android:textColor="@color/image_editor_white"
         android:visibility="gone" />
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -40,7 +40,7 @@
         android:layout_height="25dp"
         android:layout_gravity="center_vertical"
         android:layout_margin="10dp"
-        android:background="@color/white"
+        android:background="@color/image_editor_white"
         app:riv_border_color="#333333"
         app:riv_border_width="2dip"
         app:riv_mutate_background="true"

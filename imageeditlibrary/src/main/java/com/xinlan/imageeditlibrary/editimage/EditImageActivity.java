@@ -17,7 +17,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.appcompat.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
@@ -116,7 +115,7 @@ public class EditImageActivity extends BaseActivity {
      */
     public static void start(Activity context,  Uri editImagePath, final String outputPath, final int requestCode) {
         if (TextUtils.isEmpty(editImagePath.getPath())) {
-            Toast.makeText(context, R.string.no_choose, Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, R.string.image_editor_no_choose, Toast.LENGTH_SHORT).show();
             return;
         }
         Intent it = new Intent(context, EditImageActivity.class);
@@ -129,7 +128,7 @@ public class EditImageActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         checkInitImageLoader();
-        setContentView(R.layout.activity_image_edit);
+        setContentView(R.layout.image_editor_activity_image_edit);
         initView();
         getData();
     }
@@ -153,8 +152,8 @@ public class EditImageActivity extends BaseActivity {
         imageHeight = metrics.heightPixels / 2;
 
         bannerFlipper = findViewById(R.id.banner_flipper);
-        bannerFlipper.setInAnimation(this, R.anim.in_bottom_to_top);
-        bannerFlipper.setOutAnimation(this, R.anim.out_bottom_to_top);
+        bannerFlipper.setInAnimation(this, R.anim.image_editor_in_bottom_to_top);
+        bannerFlipper.setOutAnimation(this, R.anim.image_editor_out_bottom_to_top);
         // 应用按钮
         View applyBtn = findViewById(R.id.apply);
         applyBtn.setOnClickListener(new ApplyBtnClick());
@@ -306,8 +305,8 @@ public class EditImageActivity extends BaseActivity {
             onSaveTaskDone();
         } else {//图片还未被保存    弹出提示框确认
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setMessage(R.string.exit_without_save)
-                    .setCancelable(false).setPositiveButton(R.string.confirm, (dialog, id) -> mContext.finish()).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+            alertDialogBuilder.setMessage(R.string.image_editor_exit_without_save)
+                    .setCancelable(false).setPositiveButton(R.string.image_editor_confirm, (dialog, id) -> mContext.finish()).setNegativeButton(R.string.image_editor_cancel, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     dialog.cancel();
                 }
@@ -486,7 +485,7 @@ public class EditImageActivity extends BaseActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = EditImageActivity.getLoadingDialog(mContext, R.string.saving_image, false);
+            dialog = EditImageActivity.getLoadingDialog(mContext, R.string.image_editor_saving_image, false);
             dialog.show();
         }
 
@@ -499,7 +498,7 @@ public class EditImageActivity extends BaseActivity {
                 resetOpTimes();
                 onSaveTaskDone();
             } else {
-                Toast.makeText(mContext, R.string.save_error, Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, R.string.image_editor_save_error, Toast.LENGTH_SHORT).show();
             }
         }
     }//end inner class

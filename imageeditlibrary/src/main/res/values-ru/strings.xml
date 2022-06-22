@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">Изображение не найдено</string>
-    <string name="images">% изображений d</string>
-    <string name="save">За исключением:</string>
-    <string name="apply">1. Применить</string>
+    <string name="image_editor_no_images">Изображение не найдено</string>
+    <string name="image_editor_images">% изображений d</string>
+    <string name="image_editor_save">За исключением:</string>
+    <string name="image_editor_apply">1. Применить</string>
 
-    <string name="stickers">3. Наклейки</string>
-    <string name="filter">Фильтры для воды</string>
-    <string name="crop">Урожай на полях</string>
-    <string name="rotate">По принципу ротации</string>
-    <string name="text">Текст на английском языке</string>
-    <string name="edit">2. Редактирование</string>
+    <string name="image_editor_stickers">3. Наклейки</string>
+    <string name="image_editor_filter">Фильтры для воды</string>
+    <string name="image_editor_crop">Урожай на полях</string>
+    <string name="image_editor_rotate">По принципу ротации</string>
+    <string name="image_editor_text">Текст на английском языке</string>
+    <string name="image_editor_edit">2. Редактирование</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Диалог выбора цвета для Android</string>
-    <string name="materialcolorpicker__descLib">Диалог выбора цвета материала</string>
-    <string name="materialcolorpicker__errHex">Формат кода Hex неверный</string>
-    <string name="materialcolorpicker__inputColor">Цвет: красный</string>
-    <string name="materialcolorpicker__btnSelectColor">выбрать</string>
-    <string name="saving_image">- спасти...</string>
-    <string name="input_hint">Входной текст...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Диалог выбора цвета для Android</string>
+    <string name="image_editor_materialcolorpicker__descLib">Диалог выбора цвета материала</string>
+    <string name="image_editor_materialcolorpicker__errHex">Формат кода Hex неверный</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Цвет: красный</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">выбрать</string>
+    <string name="image_editor_saving_image">- спасти...</string>
+    <string name="image_editor_input_hint">Входной текст...</string>
 
-    <string name="no_choose">Пожалуйста, выберите изображение для редактирования</string>
-    <string name="auto_newline">АвтоНовыйлайн</string>
-    <string name="save_error">Сохраните ошибку!</string>
-    <string name="handing">- погрузка...</string>
+    <string name="image_editor_no_choose">Пожалуйста, выберите изображение для редактирования</string>
+    <string name="image_editor_auto_newline">АвтоНовыйлайн</string>
+    <string name="image_editor_save_error">Сохраните ошибку!</string>
+    <string name="image_editor_handing">- погрузка...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>1. Происхождение</item>
         <item>Мягкие и мягкие</item>
         <item>Черный цвет кожи</item>
@@ -42,14 +42,14 @@
         <item>Дизайн и дизайн</item>
     </string-array>
 
-    <string name="more">Более подробная информация</string>
-    <string name="exit_without_save">Отредактированное изображение не сохраняется. Ты хочешь уйти\?</string>
-    <string name="confirm">3. Подтверждение:</string>
-    <string name="cancel">Все в силе</string>
+    <string name="image_editor_more">Более подробная информация</string>
+    <string name="image_editor_exit_without_save">Отредактированное изображение не сохраняется. Ты хочешь уйти\?</string>
+    <string name="image_editor_confirm">3. Подтверждение:</string>
+    <string name="image_editor_cancel">Все в силе</string>
 
-    <string name="beauty">- красота!</string>
-    <string name="smooth">- без проблем</string>
-    <string name="white_skin">Белая кожа;</string>
-    <string name="app_name">ИзображениеПравитьБиблиотека</string>
-    <string name="sticker">sticker</string>
+    <string name="image_editor_beauty">- красота!</string>
+    <string name="image_editor_smooth">- без проблем</string>
+    <string name="image_editor_white_skin">Белая кожа;</string>
+    <string name="image_editor_app_name">ИзображениеПравитьБиблиотека</string>
+    <string name="image_editor_sticker">sticker</string>
 </resources>

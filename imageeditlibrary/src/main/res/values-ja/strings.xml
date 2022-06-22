@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">いいえ画像が見つかりました</string>
-    <string name="images">% d画像</string>
-    <string name="save">救う</string>
-    <string name="apply">適用</string>
+    <string name="image_editor_no_images">いいえ画像が見つかりました</string>
+    <string name="image_editor_images">% d画像</string>
+    <string name="image_editor_save">救う</string>
+    <string name="image_editor_apply">適用</string>
 
-    <string name="stickers">シール</string>
-    <string name="filter">フィルタ</string>
-    <string name="crop">作物</string>
-    <string name="rotate">回転</string>
-    <string name="text">テキスト</string>
-    <string name="edit">編集</string>
+    <string name="image_editor_stickers">シール</string>
+    <string name="image_editor_filter">フィルタ</string>
+    <string name="image_editor_crop">作物</string>
+    <string name="image_editor_rotate">回転</string>
+    <string name="image_editor_text">テキスト</string>
+    <string name="image_editor_edit">編集</string>
 
 
 
-    <string name="materialcolorpicker__app_name">androidマテリアルカラーピッカーダイアログ</string>
-    <string name="materialcolorpicker__descLib">マテリアルカラーピッカーダイアログ</string>
-    <string name="materialcolorpicker__errHex">16進数のフォーマットが正しくない</string>
-    <string name="materialcolorpicker__inputColor">カラーは</string>
-    <string name="materialcolorpicker__btnSelectColor">選択</string>
-    <string name="saving_image">すれば…</string>
-    <string name="input_hint">入力整张专辑的…</string>
+    <string name="image_editor_materialcolorpicker__app_name">androidマテリアルカラーピッカーダイアログ</string>
+    <string name="image_editor_materialcolorpicker__descLib">マテリアルカラーピッカーダイアログ</string>
+    <string name="image_editor_materialcolorpicker__errHex">16進数のフォーマットが正しくない</string>
+    <string name="image_editor_materialcolorpicker__inputColor">カラーは</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">選択</string>
+    <string name="image_editor_saving_image">すれば…</string>
+    <string name="image_editor_input_hint">入力整张专辑的…</string>
 
-    <string name="no_choose">編集する画像を選択してください</string>
-    <string name="auto_newline">自動改行</string>
-    <string name="save_error">救い誤差!</string>
-    <string name="handing">装着…</string>
+    <string name="image_editor_no_choose">編集する画像を選択してください</string>
+    <string name="image_editor_auto_newline">自動改行</string>
+    <string name="image_editor_save_error">救い誤差!</string>
+    <string name="image_editor_handing">装着…</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>起源</item>
         <item>柔らかい</item>
         <item>黒</item>
@@ -42,14 +42,14 @@
         <item>モザイク</item>
     </string-array>
 
-    <string name="more">もっと</string>
-    <string name="exit_without_save">編集した画像は保存されません。出たいのか\?</string>
-    <string name="confirm">確認</string>
-    <string name="cancel">キャンセル</string>
+    <string name="image_editor_more">もっと</string>
+    <string name="image_editor_exit_without_save">編集した画像は保存されません。出たいのか\?</string>
+    <string name="image_editor_confirm">確認</string>
+    <string name="image_editor_cancel">キャンセル</string>
 
-    <string name="beauty">美しさ</string>
-    <string name="smooth">滑らかな</string>
-    <string name="white_skin">白い肌</string>
-    <string name="app_name">画像編集ライブラリ</string>
-    <string name="sticker">ステッカー</string>
+    <string name="image_editor_beauty">美しさ</string>
+    <string name="image_editor_smooth">滑らかな</string>
+    <string name="image_editor_white_skin">白い肌</string>
+    <string name="image_editor_app_name">画像編集ライブラリ</string>
+    <string name="image_editor_sticker">ステッカー</string>
 </resources>

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/image_edit_back" />
+        android:src="@drawable/image_editor_image_edit_back" />
 
     <LinearLayout
         android:layout_toRightOf="@id/back_to_main"
@@ -28,9 +28,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/smooth"
-                android:textColor="@color/white"
-                android:textSize="@dimen/image_edit_text_size" />
+                android:text="@string/image_editor_smooth"
+                android:textColor="@color/image_editor_white"
+                android:textSize="@dimen/image_editor_image_edit_text_size" />
 
             <SeekBar
                 android:id="@+id/smooth_value_bar"
@@ -50,9 +50,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/white_skin"
-                android:textColor="@color/white"
-                android:textSize="@dimen/image_edit_text_size" />
+                android:text="@string/image_editor_white_skin"
+                android:textColor="@color/image_editor_white"
+                android:textSize="@dimen/image_editor_image_edit_text_size" />
 
             <SeekBar
                 android:id="@+id/white_skin_value_bar"

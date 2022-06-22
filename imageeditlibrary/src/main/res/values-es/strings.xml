@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">no encontre la imagen</string>
-    <string name="images">%d imágenes</string>
-    <string name="save">ahorrar</string>
-    <string name="apply">aplicar</string>
+    <string name="image_editor_no_images">no encontre la imagen</string>
+    <string name="image_editor_images">%d imágenes</string>
+    <string name="image_editor_save">ahorrar</string>
+    <string name="image_editor_apply">aplicar</string>
 
-    <string name="stickers">pegatinas</string>
-    <string name="filter">filtrar</string>
-    <string name="crop">cultivo</string>
-    <string name="rotate">girar</string>
-    <string name="text">texto</string>
-    <string name="edit">editar</string>
+    <string name="image_editor_stickers">pegatinas</string>
+    <string name="image_editor_filter">filtrar</string>
+    <string name="image_editor_crop">cultivo</string>
+    <string name="image_editor_rotate">girar</string>
+    <string name="image_editor_text">texto</string>
+    <string name="image_editor_edit">editar</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Cuadro de diálogo Selector de color de material de Android</string>
-    <string name="materialcolorpicker__descLib">Cuadro de diálogo Selector de color de material</string>
-    <string name="materialcolorpicker__errHex">Formato de código hexadecimal incorrecto</string>
-    <string name="materialcolorpicker__inputColor">Color:</string>
-    <string name="materialcolorpicker__btnSelectColor">Seleccione</string>
-    <string name="saving_image">ahorrar...</string>
-    <string name="input_hint">texto de entrada ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Cuadro de diálogo Selector de color de material de Android</string>
+    <string name="image_editor_materialcolorpicker__descLib">Cuadro de diálogo Selector de color de material</string>
+    <string name="image_editor_materialcolorpicker__errHex">Formato de código hexadecimal incorrecto</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Color:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">Seleccione</string>
+    <string name="image_editor_saving_image">ahorrar...</string>
+    <string name="image_editor_input_hint">texto de entrada ...</string>
 
-    <string name="no_choose">por favor elige una imagen para editar</string>
-    <string name="auto_newline">AutoNewline</string>
-    <string name="save_error">¡Guardar error!</string>
-    <string name="handing">cargando...</string>
+    <string name="image_editor_no_choose">por favor elige una imagen para editar</string>
+    <string name="image_editor_auto_newline">AutoNewline</string>
+    <string name="image_editor_save_error">¡Guardar error!</string>
+    <string name="image_editor_handing">cargando...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>origen</item>
         <item>suave</item>
         <item>negro</item>
@@ -42,14 +42,14 @@
         <item>mosaico</item>
     </string-array>
 
-    <string name="more">mas</string>
-    <string name="exit_without_save">La imagen editada no se guarda. ¿Quieres salir\?</string>
-    <string name="confirm">Confirmar confirmación</string>
-    <string name="cancel">cancelar</string>
+    <string name="image_editor_more">mas</string>
+    <string name="image_editor_exit_without_save">La imagen editada no se guarda. ¿Quieres salir\?</string>
+    <string name="image_editor_confirm">Confirmar confirmación</string>
+    <string name="image_editor_cancel">cancelar</string>
 
-    <string name="beauty">La belleza</string>
-    <string name="smooth">Sin suave</string>
-    <string name="white_skin">Piel blanca</string>
-    <string name="app_name">ImagenEditArtíoteca</string>
-    <string name="sticker">Pegatinas</string>
+    <string name="image_editor_beauty">La belleza</string>
+    <string name="image_editor_smooth">Sin suave</string>
+    <string name="image_editor_white_skin">Piel blanca</string>
+    <string name="image_editor_app_name">ImagenEditArtíoteca</string>
+    <string name="image_editor_sticker">Pegatinas</string>
 </resources>

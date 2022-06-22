@@ -75,9 +75,9 @@ public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            setContentView(R.layout.materialcolorpicker__layout_color_picker);
+            setContentView(R.layout.image_editor_materialcolorpicker__layout_color_picker);
         } else {
-            setContentView(R.layout.materialcolorpicker__layout_color_picker_old_android);
+            setContentView(R.layout.image_editor_materialcolorpicker__layout_color_picker_old_android);
         }
 
         colorView = findViewById(R.id.colorView);
@@ -145,7 +145,7 @@ public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListen
             greenSeekBar.setProgress(green);
             blueSeekBar.setProgress(blue);
         } else {
-            codHex.setError(c.getResources().getText(R.string.materialcolorpicker__errHex));
+            codHex.setError(c.getResources().getText(R.string.image_editor_materialcolorpicker__errHex));
         }
     }
 

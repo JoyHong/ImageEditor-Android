@@ -5,13 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.text.DynamicLayout;
-import android.text.Layout;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -107,9 +104,9 @@ public class TextStickerView extends View {
         debugPaint.setColor(Color.parseColor("#66ff0000"));
 
         mDeleteBitmap = BitmapFactory.decodeResource(context.getResources(),
-                R.drawable.sticker_delete);
+                R.drawable.image_editor_sticker_delete);
         mRotateBitmap = BitmapFactory.decodeResource(context.getResources(),
-                R.drawable.sticker_rotate);
+                R.drawable.image_editor_sticker_rotate);
 
         mDeleteRect.set(0, 0, mDeleteBitmap.getWidth(), mDeleteBitmap.getHeight());
         mRotateRect.set(0, 0, mRotateBitmap.getWidth(), mRotateBitmap.getHeight());

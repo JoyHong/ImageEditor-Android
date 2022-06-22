@@ -81,7 +81,7 @@ public class CropFragment extends BaseEditFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		mainView = inflater.inflate(R.layout.fragment_edit_image_crop, null);
+		mainView = inflater.inflate(R.layout.image_editor_fragment_edit_image_crop, null);
 		return mainView;
 	}
 
@@ -229,7 +229,7 @@ public class CropFragment extends BaseEditFragment {
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
-			dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.saving_image,
+			dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.image_editor_saving_image,
 					false);
 			dialog.show();
 		}

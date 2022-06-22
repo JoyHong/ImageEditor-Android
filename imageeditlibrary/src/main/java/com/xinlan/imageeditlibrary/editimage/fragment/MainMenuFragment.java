@@ -40,7 +40,7 @@ public class MainMenuFragment extends BaseEditFragment implements View.OnClickLi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mainView = inflater.inflate(R.layout.fragment_edit_image_main_menu,
+        mainView = inflater.inflate(R.layout.image_editor_fragment_edit_image_main_menu,
                 null);
         return mainView;
     }

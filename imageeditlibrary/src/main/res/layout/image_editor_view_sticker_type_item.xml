@@ -1,6 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="wrap_content"
-              android:layout_height="@dimen/bottom_banner_height"
+              android:layout_height="@dimen/image_editor_bottom_banner_height"
               android:orientation="vertical"
               android:paddingLeft="18dp"
               android:paddingRight="18dp">
@@ -12,7 +12,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginTop="10dp"
         android:scaleType="centerInside"
-        android:src="@drawable/yd_image_tx"
+        android:src="@drawable/image_editor_yd_image_tx"
         android:visibility="gone"/>
 
     <TextView
@@ -22,6 +22,6 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:textColor="#ffffff"
-        android:textSize="@dimen/image_edit_text_size"/>
+        android:textSize="@dimen/image_editor_image_edit_text_size"/>
 
 </FrameLayout>

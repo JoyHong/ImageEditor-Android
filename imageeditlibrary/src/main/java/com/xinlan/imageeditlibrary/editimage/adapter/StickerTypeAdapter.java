@@ -19,9 +19,9 @@ import com.xinlan.imageeditlibrary.editimage.fragment.StickerFragment;
  * @author panyi
  */
 public class StickerTypeAdapter extends RecyclerView.Adapter<ViewHolder> {
-    public static final int[] typeIcon = {R.drawable.stickers_type_animal,
-            R.drawable.stickers_type_motion, R.drawable.stickers_type_cos,
-            R.drawable.stickers_type_mark, R.drawable.stickers_type_decoration};
+    public static final int[] typeIcon = {R.drawable.image_editor_stickers_type_animal,
+            R.drawable.image_editor_stickers_type_motion, R.drawable.image_editor_stickers_type_cos,
+            R.drawable.image_editor_stickers_type_mark, R.drawable.image_editor_stickers_type_decoration};
     public static final String[] stickerPath = {"stickers/type1", "stickers/type2", "stickers/type3", "stickers/type4", "stickers/type5", "stickers/type6"};
     public static final String[] stickerPathName = {"1", "2", "3", "4", "5", "6"};
     private StickerFragment mStickerFragment;
@@ -57,7 +57,7 @@ public class StickerTypeAdapter extends RecyclerView.Adapter<ViewHolder> {
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewtype) {
         View v = null;
         v = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.view_sticker_type_item, parent, false);
+                R.layout.image_editor_view_sticker_type_item, parent, false);
         ImageHolder holer = new ImageHolder(v);
         return holer;
     }
@@ -68,12 +68,13 @@ public class StickerTypeAdapter extends RecyclerView.Adapter<ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         ImageHolder imageHoler = (ImageHolder) holder;
         // imageHoler.icon.setImageResource(R.drawable.ic_launcher);
-        String name = mStickerFragment.getString(R.string.sticker) + stickerPathName[position];
+        String name = mStickerFragment.getString(R.string.image_editor_sticker) + stickerPathName[position];
         imageHoler.text.setText(name);
         // TODO
         //imageHoler.icon.setImageResource(typeIcon[position]);
         imageHoler.text.setTag(stickerPath[position]);
         imageHoler.text.setOnClickListener(mImageClick);
+
     }
 
     /**

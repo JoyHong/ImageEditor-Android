@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">On n’a pas trouvé l’image.</string>
-    <string name="images">%d images</string>
-    <string name="save">Save</string>
-    <string name="apply">appliquer</string>
+    <string name="image_editor_no_images">On n’a pas trouvé l’image.</string>
+    <string name="image_editor_images">%d images</string>
+    <string name="image_editor_save">Save</string>
+    <string name="image_editor_apply">appliquer</string>
 
-    <string name="stickers">autocollants</string>
-    <string name="filter">filtre</string>
-    <string name="crop">cultures</string>
-    <string name="rotate">rotation</string>
-    <string name="text">texte</string>
-    <string name="edit">éditer</string>
+    <string name="image_editor_stickers">autocollants</string>
+    <string name="image_editor_filter">filtre</string>
+    <string name="image_editor_crop">cultures</string>
+    <string name="image_editor_rotate">rotation</string>
+    <string name="image_editor_text">texte</string>
+    <string name="image_editor_edit">éditer</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Android Material Color Picker Dialog</string>
-    <string name="materialcolorpicker__descLib">Material Color Picker Dialog</string>
-    <string name="materialcolorpicker__errHex">Format de Code hexadécimal incorrect</string>
-    <string name="materialcolorpicker__inputColor">Couleur:</string>
-    <string name="materialcolorpicker__btnSelectColor">sélectionnez</string>
-    <string name="saving_image">Sauve …</string>
-    <string name="input_hint">Entrée du texte …</string>
+    <string name="image_editor_materialcolorpicker__app_name">Android Material Color Picker Dialog</string>
+    <string name="image_editor_materialcolorpicker__descLib">Material Color Picker Dialog</string>
+    <string name="image_editor_materialcolorpicker__errHex">Format de Code hexadécimal incorrect</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Couleur:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">sélectionnez</string>
+    <string name="image_editor_saving_image">Sauve …</string>
+    <string name="image_editor_input_hint">Entrée du texte …</string>
 
-    <string name="no_choose">Choisissez une image pour l’édition</string>
-    <string name="auto_newline">AutoNewline</string>
-    <string name="save_error">Économisez l’erreur!</string>
-    <string name="handing">Chargement …</string>
+    <string name="image_editor_no_choose">Choisissez une image pour l’édition</string>
+    <string name="image_editor_auto_newline">AutoNewline</string>
+    <string name="image_editor_save_error">Économisez l’erreur!</string>
+    <string name="image_editor_handing">Chargement …</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>origine</item>
         <item>doux</item>
         <item>noir</item>
@@ -42,14 +42,14 @@
         <item>mosaïque</item>
     </string-array>
 
-    <string name="more">plus</string>
-    <string name="exit_without_save">L’image éditée n’est pas sauvegardée. Tu veux sortir\?</string>
-    <string name="confirm">Confirmez.</string>
-    <string name="cancel">Annulez.</string>
+    <string name="image_editor_more">plus</string>
+    <string name="image_editor_exit_without_save">L’image éditée n’est pas sauvegardée. Tu veux sortir\?</string>
+    <string name="image_editor_confirm">Confirmez.</string>
+    <string name="image_editor_cancel">Annulez.</string>
 
-    <string name="beauty">beauté</string>
-    <string name="smooth">lisses</string>
-    <string name="white_skin">Peau blanche</string>
-    <string name="app_name">ImageEditLibrary</string>
-    <string name="sticker">Autocollants</string>
+    <string name="image_editor_beauty">beauté</string>
+    <string name="image_editor_smooth">lisses</string>
+    <string name="image_editor_white_skin">Peau blanche</string>
+    <string name="image_editor_app_name">ImageEditLibrary</string>
+    <string name="image_editor_sticker">Autocollants</string>
 </resources>

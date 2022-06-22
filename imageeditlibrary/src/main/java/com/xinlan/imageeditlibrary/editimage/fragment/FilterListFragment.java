@@ -53,7 +53,7 @@ public class FilterListFragment extends BaseEditFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mainView = inflater.inflate(R.layout.fragment_edit_image_fliter, null);
+        mainView = inflater.inflate(R.layout.image_editor_fragment_edit_image_fliter, null);
         return mainView;
     }
 
@@ -117,7 +117,7 @@ public class FilterListFragment extends BaseEditFragment {
      * 装载滤镜
      */
     private void setUpFliters() {
-        fliters = getResources().getStringArray(R.array.filters);
+        fliters = getResources().getStringArray(R.array.image_editor_filters);
         if (fliters == null)
             return;
 
@@ -216,7 +216,7 @@ public class FilterListFragment extends BaseEditFragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.handing,
+            dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.image_editor_handing,
                     false);
             dialog.show();
         }

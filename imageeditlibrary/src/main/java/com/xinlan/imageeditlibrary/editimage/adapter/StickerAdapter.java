@@ -26,7 +26,7 @@ import com.xinlan.imageeditlibrary.editimage.fragment.StickerFragment;
  */
 public class StickerAdapter extends RecyclerView.Adapter<ViewHolder> {
     public DisplayImageOptions imageOption = new DisplayImageOptions.Builder()
-            .cacheInMemory(true).showImageOnLoading(R.drawable.yd_image_tx)
+            .cacheInMemory(true).showImageOnLoading(R.drawable.image_editor_yd_image_tx)
             .build();// 下载图片显示
 
     private StickerFragment mStickerFragment;
@@ -61,7 +61,7 @@ public class StickerAdapter extends RecyclerView.Adapter<ViewHolder> {
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewtype) {
         View v = null;
         v = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.view_sticker_item, parent, false);
+                R.layout.image_editor_view_sticker_item, parent, false);
         ImageHolder holer = new ImageHolder(v);
         return holer;
     }

@@ -64,7 +64,7 @@ public class AddTextFragment extends BaseEditFragment implements TextWatcher {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        mainView = inflater.inflate(R.layout.fragment_edit_image_add_text, null);
+        mainView = inflater.inflate(R.layout.image_editor_fragment_edit_image_add_text, null);
         return mainView;
     }
 

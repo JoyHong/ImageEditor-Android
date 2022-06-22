@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">no found the image</string>
-    <string name="images">%d images</string>
-    <string name="save">save</string>
-    <string name="apply">apply</string>
+    <string name="image_editor_no_images">no found the image</string>
+    <string name="image_editor_images">%d images</string>
+    <string name="image_editor_save">save</string>
+    <string name="image_editor_apply">apply</string>
 
-    <string name="stickers">stickers</string>
-    <string name="filter">filter</string>
-    <string name="crop">crop</string>
-    <string name="rotate">rotate</string>
-    <string name="text">text</string>
-    <string name="edit">edit</string>
+    <string name="image_editor_stickers">stickers</string>
+    <string name="image_editor_filter">filter</string>
+    <string name="image_editor_crop">crop</string>
+    <string name="image_editor_rotate">rotate</string>
+    <string name="image_editor_text">text</string>
+    <string name="image_editor_edit">edit</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Android Material Color Picker Dialog</string>
-    <string name="materialcolorpicker__descLib">Material Color Picker Dialog</string>
-    <string name="materialcolorpicker__errHex">Hex Code Format incorrect</string>
-    <string name="materialcolorpicker__inputColor">Color:</string>
-    <string name="materialcolorpicker__btnSelectColor">Select</string>
-    <string name="saving_image">save...</string>
-    <string name="input_hint">input text ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Android Material Color Picker Dialog</string>
+    <string name="image_editor_materialcolorpicker__descLib">Material Color Picker Dialog</string>
+    <string name="image_editor_materialcolorpicker__errHex">Hex Code Format incorrect</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Color:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">Select</string>
+    <string name="image_editor_saving_image">save...</string>
+    <string name="image_editor_input_hint">input text ...</string>
 
-    <string name="no_choose">please choose a image for edit</string>
-    <string name="auto_newline">AutoNewline</string>
-    <string name="save_error">Save error!</string>
-    <string name="handing">loading...</string>
+    <string name="image_editor_no_choose">please choose a image for edit</string>
+    <string name="image_editor_auto_newline">AutoNewline</string>
+    <string name="image_editor_save_error">Save error!</string>
+    <string name="image_editor_handing">loading...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>origin</item>
         <item>soft</item>
         <item>black</item>
@@ -42,14 +42,14 @@
         <item>mosaic</item>
     </string-array>
 
-    <string name="more">more</string>
-    <string name="exit_without_save">The edited image is not saved. Do you want to exit? </string>
-    <string name="confirm">confirm</string>
-    <string name="cancel">cancel</string>
+    <string name="image_editor_more">more</string>
+    <string name="image_editor_exit_without_save">The edited image is not saved. Do you want to exit? </string>
+    <string name="image_editor_confirm">confirm</string>
+    <string name="image_editor_cancel">cancel</string>
 
-    <string name="beauty">beauty</string>
-    <string name="smooth">smooth</string>
-    <string name="white_skin">white skin</string>
-    <string name="app_name">ImageEditLibrary</string>
-    <string name="sticker">sticker</string>
+    <string name="image_editor_beauty">beauty</string>
+    <string name="image_editor_smooth">smooth</string>
+    <string name="image_editor_white_skin">white skin</string>
+    <string name="image_editor_app_name">ImageEditLibrary</string>
+    <string name="image_editor_sticker">sticker</string>
 </resources>

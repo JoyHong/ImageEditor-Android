@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">لم يتم العثور على الصورة</string>
-    <string name="images">٪ d صور</string>
-    <string name="save">حفظ</string>
-    <string name="apply">يتقدم</string>
+    <string name="image_editor_no_images">لم يتم العثور على الصورة</string>
+    <string name="image_editor_images">٪ d صور</string>
+    <string name="image_editor_save">حفظ</string>
+    <string name="image_editor_apply">يتقدم</string>
 
-    <string name="stickers">ملصقات</string>
-    <string name="filter">منقي</string>
-    <string name="crop"><![CDATA[ا & قتصاص]]></string>
-    <string name="rotate">استدارة</string>
-    <string name="text">نص</string>
-    <string name="edit">تعديل</string>
+    <string name="image_editor_stickers">ملصقات</string>
+    <string name="image_editor_filter">منقي</string>
+    <string name="image_editor_crop"><![CDATA[ا & قتصاص]]></string>
+    <string name="image_editor_rotate">استدارة</string>
+    <string name="image_editor_text">نص</string>
+    <string name="image_editor_edit">تعديل</string>
 
 
 
-    <string name="materialcolorpicker__app_name">مربع حوار منتقي ألوان المواد في Android</string>
-    <string name="materialcolorpicker__descLib">مربع حوار منتقي ألوان المواد</string>
-    <string name="materialcolorpicker__errHex">تنسيق الكود السداسي غير صحيح</string>
-    <string name="materialcolorpicker__inputColor">اللون:</string>
-    <string name="materialcolorpicker__btnSelectColor">يختار</string>
-    <string name="saving_image">حفظ...</string>
-    <string name="input_hint">أدخل نصآ ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">مربع حوار منتقي ألوان المواد في Android</string>
+    <string name="image_editor_materialcolorpicker__descLib">مربع حوار منتقي ألوان المواد</string>
+    <string name="image_editor_materialcolorpicker__errHex">تنسيق الكود السداسي غير صحيح</string>
+    <string name="image_editor_materialcolorpicker__inputColor">اللون:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">يختار</string>
+    <string name="image_editor_saving_image">حفظ...</string>
+    <string name="image_editor_input_hint">أدخل نصآ ...</string>
 
-    <string name="no_choose">الرجاء اختيار صورة للتحرير</string>
-    <string name="auto_newline">خط جديد تلقائي</string>
-    <string name="save_error">حفظ الخطأ!</string>
-    <string name="handing">جار التحميل...</string>
+    <string name="image_editor_no_choose">الرجاء اختيار صورة للتحرير</string>
+    <string name="image_editor_auto_newline">خط جديد تلقائي</string>
+    <string name="image_editor_save_error">حفظ الخطأ!</string>
+    <string name="image_editor_handing">جار التحميل...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>الأصل</item>
         <item>لين</item>
         <item>أسود</item>
@@ -42,14 +42,14 @@
         <item>فسيفساء</item>
     </string-array>
 
-    <string name="more">أكثر</string>
-    <string name="exit_without_save">لا يتم حفظ الصورة المحررة. هل تريد الخروج؟</string>
-    <string name="confirm">تؤكد</string>
-    <string name="cancel">إلغاء</string>
+    <string name="image_editor_more">أكثر</string>
+    <string name="image_editor_exit_without_save">لا يتم حفظ الصورة المحررة. هل تريد الخروج؟</string>
+    <string name="image_editor_confirm">تؤكد</string>
+    <string name="image_editor_cancel">إلغاء</string>
 
-    <string name="beauty">جمال</string>
-    <string name="smooth">ناعم</string>
-    <string name="white_skin">بشرة بيضاء</string>
-    <string name="app_name">مكتبة الصور</string>
-    <string name="sticker">ملصقات</string>
+    <string name="image_editor_beauty">جمال</string>
+    <string name="image_editor_smooth">ناعم</string>
+    <string name="image_editor_white_skin">بشرة بيضاء</string>
+    <string name="image_editor_app_name">مكتبة الصور</string>
+    <string name="image_editor_sticker">ملصقات</string>
 </resources>

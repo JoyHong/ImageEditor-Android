@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">görüntü bulunamadı</string>
-    <string name="images">%d görüntüler</string>
-    <string name="save">kurtarmak</string>
-    <string name="apply">uygulamak</string>
+    <string name="image_editor_no_images">görüntü bulunamadı</string>
+    <string name="image_editor_images">%d görüntüler</string>
+    <string name="image_editor_save">kurtarmak</string>
+    <string name="image_editor_apply">uygulamak</string>
 
-    <string name="stickers">Etiketler</string>
-    <string name="filter">filtre</string>
-    <string name="crop">ekin</string>
-    <string name="rotate">döndürmek</string>
-    <string name="text">Metin</string>
-    <string name="edit">düzenlemek</string>
+    <string name="image_editor_stickers">Etiketler</string>
+    <string name="image_editor_filter">filtre</string>
+    <string name="image_editor_crop">ekin</string>
+    <string name="image_editor_rotate">döndürmek</string>
+    <string name="image_editor_text">Metin</string>
+    <string name="image_editor_edit">düzenlemek</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Android Malzeme Renk Seçici İletişim Kutusu</string>
-    <string name="materialcolorpicker__descLib">Malzeme Renk Seçici İletişim Kutusu</string>
-    <string name="materialcolorpicker__errHex">Onaltılık Kod Biçimi yanlış</string>
-    <string name="materialcolorpicker__inputColor">Renk:</string>
-    <string name="materialcolorpicker__btnSelectColor">Seçmek</string>
-    <string name="saving_image">kurtarmak...</string>
-    <string name="input_hint">giriş metni ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Android Malzeme Renk Seçici İletişim Kutusu</string>
+    <string name="image_editor_materialcolorpicker__descLib">Malzeme Renk Seçici İletişim Kutusu</string>
+    <string name="image_editor_materialcolorpicker__errHex">Onaltılık Kod Biçimi yanlış</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Renk:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">Seçmek</string>
+    <string name="image_editor_saving_image">kurtarmak...</string>
+    <string name="image_editor_input_hint">giriş metni ...</string>
 
-    <string name="no_choose">lütfen düzenlemek için bir resim seçin</string>
-    <string name="auto_newline">OtomatikYeni Hat</string>
-    <string name="save_error">Hatayı kaydet!</string>
-    <string name="handing">yükleme...</string>
+    <string name="image_editor_no_choose">lütfen düzenlemek için bir resim seçin</string>
+    <string name="image_editor_auto_newline">OtomatikYeni Hat</string>
+    <string name="image_editor_save_error">Hatayı kaydet!</string>
+    <string name="image_editor_handing">yükleme...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>köken</item>
         <item>yumuşak</item>
         <item>siyah</item>
@@ -42,14 +42,14 @@
         <item>mozaik</item>
     </string-array>
 
-    <string name="more">daha</string>
-    <string name="exit_without_save">Düzenlenen görüntü kaydedilmez. Çıkmak istiyor musunuz\?</string>
-    <string name="confirm">onaylamak</string>
-    <string name="cancel">İptal</string>
+    <string name="image_editor_more">daha</string>
+    <string name="image_editor_exit_without_save">Düzenlenen görüntü kaydedilmez. Çıkmak istiyor musunuz\?</string>
+    <string name="image_editor_confirm">onaylamak</string>
+    <string name="image_editor_cancel">İptal</string>
 
-    <string name="beauty">güzellik</string>
-    <string name="smooth">düz</string>
-    <string name="white_skin">beyaz ten</string>
-    <string name="app_name">ImageEditLibrary</string>
-    <string name="sticker">sticker</string>
+    <string name="image_editor_beauty">güzellik</string>
+    <string name="image_editor_smooth">düz</string>
+    <string name="image_editor_white_skin">beyaz ten</string>
+    <string name="image_editor_app_name">ImageEditLibrary</string>
+    <string name="image_editor_sticker">sticker</string>
 </resources>

@@ -57,7 +57,7 @@ public class BeautyFragment extends BaseEditFragment implements SeekBar.OnSeekBa
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mainView = inflater.inflate(R.layout.fragment_edit_image_beauty, null);
+        mainView = inflater.inflate(R.layout.image_editor_fragment_edit_image_beauty, null);
 
         mSmoothValueBar = (SeekBar) mainView.findViewById(R.id.smooth_value_bar);
         mWhiteValueBar = (SeekBar) mainView.findViewById(R.id.white_skin_value_bar);
@@ -171,7 +171,7 @@ public class BeautyFragment extends BaseEditFragment implements SeekBar.OnSeekBa
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.handing,
+            dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.image_editor_handing,
                     false);
             dialog.show();
         }

@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">Tidak ditemukan gambar</string>
-    <string name="images">Gambar %d</string>
-    <string name="save">simpan</string>
-    <string name="apply">terapkan</string>
+    <string name="image_editor_no_images">Tidak ditemukan gambar</string>
+    <string name="image_editor_images">Gambar %d</string>
+    <string name="image_editor_save">simpan</string>
+    <string name="image_editor_apply">terapkan</string>
 
-    <string name="stickers">stiker</string>
-    <string name="filter">filter</string>
-    <string name="crop">panena</string>
-    <string name="rotate">putaranname</string>
-    <string name="text">teks</string>
-    <string name="edit">sunting</string>
+    <string name="image_editor_stickers">stiker</string>
+    <string name="image_editor_filter">filter</string>
+    <string name="image_editor_crop">panena</string>
+    <string name="image_editor_rotate">putaranname</string>
+    <string name="image_editor_text">teks</string>
+    <string name="image_editor_edit">sunting</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Dialog pemungut warna Android</string>
-    <string name="materialcolorpicker__descLib">Dialog pemetik warna Material</string>
-    <string name="materialcolorpicker__errHex">Format kode Hex tidak benar</string>
-    <string name="materialcolorpicker__inputColor">Warna:</string>
-    <string name="materialcolorpicker__btnSelectColor">pilih</string>
-    <string name="saving_image">Simpan …</string>
-    <string name="input_hint">Masukan teks …</string>
+    <string name="image_editor_materialcolorpicker__app_name">Dialog pemungut warna Android</string>
+    <string name="image_editor_materialcolorpicker__descLib">Dialog pemetik warna Material</string>
+    <string name="image_editor_materialcolorpicker__errHex">Format kode Hex tidak benar</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Warna:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">pilih</string>
+    <string name="image_editor_saving_image">Simpan …</string>
+    <string name="image_editor_input_hint">Masukan teks …</string>
 
-    <string name="no_choose">Silakan pilih gambar untuk diedit</string>
-    <string name="auto_newline">AutoNewline</string>
-    <string name="save_error">Simpan kesalahan!</string>
-    <string name="handing">Memuat …</string>
+    <string name="image_editor_no_choose">Silakan pilih gambar untuk diedit</string>
+    <string name="image_editor_auto_newline">AutoNewline</string>
+    <string name="image_editor_save_error">Simpan kesalahan!</string>
+    <string name="image_editor_handing">Memuat …</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>asal</item>
         <item>lembut</item>
         <item>hitam</item>
@@ -42,14 +42,14 @@
         <item>mosaik</item>
     </string-array>
 
-    <string name="more">lebih</string>
-    <string name="exit_without_save">Gambar yang diedit tidak disimpan. Kau mau keluar\?</string>
-    <string name="confirm">konfirmasi</string>
-    <string name="cancel">batal</string>
+    <string name="image_editor_more">lebih</string>
+    <string name="image_editor_exit_without_save">Gambar yang diedit tidak disimpan. Kau mau keluar\?</string>
+    <string name="image_editor_confirm">konfirmasi</string>
+    <string name="image_editor_cancel">batal</string>
 
-    <string name="beauty">kecantikan</string>
-    <string name="smooth">mulus</string>
-    <string name="white_skin">Kulit putih</string>
-    <string name="app_name">GambarEditLibrary</string>
-    <string name="sticker">sticker</string>
+    <string name="image_editor_beauty">kecantikan</string>
+    <string name="image_editor_smooth">mulus</string>
+    <string name="image_editor_white_skin">Kulit putih</string>
+    <string name="image_editor_app_name">GambarEditLibrary</string>
+    <string name="image_editor_sticker">sticker</string>
 </resources>

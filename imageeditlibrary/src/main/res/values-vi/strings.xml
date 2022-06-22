@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">không tìm thấy hình ảnh</string>
-    <string name="images">%d ảnh</string>
-    <string name="save">cứu</string>
-    <string name="apply">áp dụng</string>
+    <string name="image_editor_no_images">không tìm thấy hình ảnh</string>
+    <string name="image_editor_images">%d ảnh</string>
+    <string name="image_editor_save">cứu</string>
+    <string name="image_editor_apply">áp dụng</string>
 
-    <string name="stickers">Stickers</string>
-    <string name="filter">bộ lọc</string>
-    <string name="crop">Cây trồng</string>
-    <string name="rotate">Xoay</string>
-    <string name="text">Nhắn tin</string>
-    <string name="edit">biên tập</string>
+    <string name="image_editor_stickers">Stickers</string>
+    <string name="image_editor_filter">bộ lọc</string>
+    <string name="image_editor_crop">Cây trồng</string>
+    <string name="image_editor_rotate">Xoay</string>
+    <string name="image_editor_text">Nhắn tin</string>
+    <string name="image_editor_edit">biên tập</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Hộp thoại Chọn Màu Vật liệu Android</string>
-    <string name="materialcolorpicker__descLib">Hộp thoại Bộ chọn Màu Vật liệu</string>
-    <string name="materialcolorpicker__errHex">Định dạng Mã Hex không chính xác</string>
-    <string name="materialcolorpicker__inputColor">Màu:</string>
-    <string name="materialcolorpicker__btnSelectColor">Lựa</string>
-    <string name="saving_image">cứu...</string>
-    <string name="input_hint">nhập văn bản ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Hộp thoại Chọn Màu Vật liệu Android</string>
+    <string name="image_editor_materialcolorpicker__descLib">Hộp thoại Bộ chọn Màu Vật liệu</string>
+    <string name="image_editor_materialcolorpicker__errHex">Định dạng Mã Hex không chính xác</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Màu:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">Lựa</string>
+    <string name="image_editor_saving_image">cứu...</string>
+    <string name="image_editor_input_hint">nhập văn bản ...</string>
 
-    <string name="no_choose">vui lòng chọn ảnh để chỉnh sửa</string>
-    <string name="auto_newline">AutoNewline</string>
-    <string name="save_error">Lưu lỗi!</string>
-    <string name="handing">Tải...</string>
+    <string name="image_editor_no_choose">vui lòng chọn ảnh để chỉnh sửa</string>
+    <string name="image_editor_auto_newline">AutoNewline</string>
+    <string name="image_editor_save_error">Lưu lỗi!</string>
+    <string name="image_editor_handing">Tải...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>nguồn gốc</item>
         <item>mềm</item>
         <item>đen</item>
@@ -42,14 +42,14 @@
         <item>mosaic</item>
     </string-array>
 
-    <string name="more">nhiều hơn</string>
-    <string name="exit_without_save">Hình ảnh đã chỉnh sửa không được lưu. Bạn có muốn thoát ra không\?</string>
-    <string name="confirm">xác nhận</string>
-    <string name="cancel">hủy</string>
+    <string name="image_editor_more">nhiều hơn</string>
+    <string name="image_editor_exit_without_save">Hình ảnh đã chỉnh sửa không được lưu. Bạn có muốn thoát ra không\?</string>
+    <string name="image_editor_confirm">xác nhận</string>
+    <string name="image_editor_cancel">hủy</string>
 
-    <string name="beauty">vẻ đẹp</string>
-    <string name="smooth">láng</string>
-    <string name="white_skin">da trắng</string>
-    <string name="app_name">Ảnh:EditLibrary</string>
-    <string name="sticker">nhãn</string>
+    <string name="image_editor_beauty">vẻ đẹp</string>
+    <string name="image_editor_smooth">láng</string>
+    <string name="image_editor_white_skin">da trắng</string>
+    <string name="image_editor_app_name">Ảnh:EditLibrary</string>
+    <string name="image_editor_sticker">nhãn</string>
 </resources>

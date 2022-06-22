@@ -15,10 +15,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:paddingBottom="@dimen/materialcolorpicker__activity_vertical_margin"
-        android:paddingLeft="@dimen/materialcolorpicker__activity_horizontal_margin"
-        android:paddingRight="@dimen/materialcolorpicker__activity_horizontal_margin"
-        android:paddingTop="@dimen/materialcolorpicker__activity_vertical_margin">
+        android:paddingBottom="@dimen/image_editor_materialcolorpicker__activity_vertical_margin"
+        android:paddingLeft="@dimen/image_editor_materialcolorpicker__activity_horizontal_margin"
+        android:paddingRight="@dimen/image_editor_materialcolorpicker__activity_horizontal_margin"
+        android:paddingTop="@dimen/image_editor_materialcolorpicker__activity_vertical_margin">
 
         <TextView
             android:id="@+id/redToolTip"
@@ -27,7 +27,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_red_light"
-            android:textSize="@dimen/image_edit_text_size"/>
+            android:textSize="@dimen/image_editor_image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/redSeekBar"
@@ -39,7 +39,7 @@
             android:minHeight="3dip"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            android:progressDrawable="@drawable/red_progress"
+            android:progressDrawable="@drawable/image_editor_red_progress"
             android:thumbTint="@android:color/holo_red_light"/>
 
         <TextView
@@ -50,7 +50,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_green_light"
-            android:textSize="@dimen/image_edit_text_size"/>
+            android:textSize="@dimen/image_editor_image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/greenSeekBar"
@@ -62,7 +62,7 @@
             android:minHeight="3dip"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            android:progressDrawable="@drawable/materialcolorpicker__green_progress"
+            android:progressDrawable="@drawable/image_editor_materialcolorpicker__green_progress"
             android:thumbTint="@android:color/holo_green_light"/>
 
         <TextView
@@ -73,7 +73,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_blue_light"
-            android:textSize="@dimen/image_edit_text_size"/>
+            android:textSize="@dimen/image_editor_image_edit_text_size"/>
 
         <SeekBar
             android:id="@+id/blueSeekBar"
@@ -85,7 +85,7 @@
             android:max="255"
             android:maxHeight="3dip"
             android:minHeight="3dip"
-            android:progressDrawable="@drawable/materialcolorpicker__blue_progress"
+            android:progressDrawable="@drawable/image_editor_materialcolorpicker__blue_progress"
             android:thumbTint="@android:color/holo_blue_light" />
 
         <EditText
@@ -106,8 +106,8 @@
             android:text="#123456"
             android:textAllCaps="false"
             android:textColor="@color/primary_text_default_material_light"
-            android:textColorHint="@color/hint_foreground_material_light"
-            android:textSize="@dimen/image_edit_text_size" />
+            android:textColorHint="@color/image_editor_hint_foreground_material_light"
+            android:textSize="@dimen/image_editor_image_edit_text_size" />
 
         <Button
             android:id="@+id/okColorButton"
@@ -118,11 +118,11 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/shape_color_selected_btn"
+            android:background="@drawable/image_editor_shape_color_selected_btn"
             android:clickable="true"
             android:gravity="center"
-            android:text="@string/materialcolorpicker__btnSelectColor"
-            android:textColor="@color/white" />
+            android:text="@string/image_editor_materialcolorpicker__btnSelectColor"
+            android:textColor="@color/image_editor_white" />
 
     </RelativeLayout>
 

@@ -2,7 +2,7 @@
              xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
-             android:layout_height="@dimen/bottom_banner_height"
+             android:layout_height="@dimen/image_editor_bottom_banner_height"
              android:flipInterval="1000">
 
     <LinearLayout
@@ -15,7 +15,7 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/image_edit_back"/>
+            android:src="@drawable/image_editor_image_edit_back"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/stickers_type_list"
@@ -36,7 +36,7 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/image_edit_back"/>
+            android:src="@drawable/image_editor_image_edit_back"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/stickers_list"

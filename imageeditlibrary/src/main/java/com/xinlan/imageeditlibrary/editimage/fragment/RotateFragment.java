@@ -46,7 +46,7 @@ public class RotateFragment extends BaseEditFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mainView = inflater.inflate(R.layout.fragment_edit_image_rotate, null);
+        mainView = inflater.inflate(R.layout.image_editor_fragment_edit_image_rotate, null);
         return mainView;
     }
 

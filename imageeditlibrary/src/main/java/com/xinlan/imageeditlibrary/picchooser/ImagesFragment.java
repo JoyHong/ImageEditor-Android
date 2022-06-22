@@ -37,7 +37,7 @@ public class ImagesFragment extends Fragment {
 	@Override
 	public View onCreateView(final LayoutInflater inflater,
 			final ViewGroup container, final Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.gallery, null);
+		View v = inflater.inflate(R.layout.image_editor_gallery, null);
 
 		Cursor cur = getActivity().getContentResolver()
 				.query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,

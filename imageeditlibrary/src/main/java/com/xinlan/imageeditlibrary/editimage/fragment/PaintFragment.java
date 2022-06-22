@@ -76,7 +76,7 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mainView = inflater.inflate(R.layout.fragment_edit_paint, null);
+        mainView = inflater.inflate(R.layout.image_editor_fragment_edit_paint, null);
 
         return mainView;
     }
@@ -231,7 +231,7 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
 
     private void initStokeWidthPopWindow() {
         popView = LayoutInflater.from(activity).
-                inflate(R.layout.view_set_stoke_width, null);
+                inflate(R.layout.image_editor_view_set_stoke_width, null);
         setStokenWidthWindow = new PopupWindow(popView, ViewGroup.LayoutParams.MATCH_PARENT
                 , ViewGroup.LayoutParams.WRAP_CONTENT);
 
@@ -255,7 +255,7 @@ public class PaintFragment extends BaseEditFragment implements View.OnClickListe
     }
 
     private void updateEraserView() {
-        mEraserView.setImageResource(isEraser ? R.drawable.eraser_seleced : R.drawable.eraser_normal);
+        mEraserView.setImageResource(isEraser ? R.drawable.image_editor_eraser_seleced : R.drawable.image_editor_eraser_normal);
         mPaintView.setEraser(isEraser);
     }
 

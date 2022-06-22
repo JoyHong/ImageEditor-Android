@@ -81,11 +81,11 @@ public class ColorListAdapter extends RecyclerView.Adapter<ViewHolder> {
         ViewHolder viewHolder = null;
         if (viewType == TYPE_COLOR) {
             v = LayoutInflater.from(parent.getContext()).inflate(
-                    R.layout.view_color_panel, parent,false);
+                    R.layout.image_editor_view_color_panel, parent,false);
             viewHolder = new ColorViewHolder(v);
         } else if (viewType == TYPE_MORE) {
             v = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.view_color_more_panel,parent,false);
+                    .inflate(R.layout.image_editor_view_color_more_panel,parent,false);
             viewHolder = new MoreViewHolder(v);
         }
 

@@ -58,7 +58,7 @@ class GalleryAdapter extends BaseAdapter {
         if (items.get(0) instanceof BucketItem) { // show buckets
             ViewHolder holder;
             if (convertView == null) {
-                convertView = mInflater.inflate(R.layout.bucketitem, null);
+                convertView = mInflater.inflate(R.layout.image_editor_bucketitem, null);
                 holder = new ViewHolder();
                 holder.icon = (ImageView) convertView.findViewById(R.id.icon);
                 holder.text = (TextView) convertView.findViewById(R.id.text);
@@ -68,14 +68,14 @@ class GalleryAdapter extends BaseAdapter {
             }
             BucketItem bi = (BucketItem) items.get(position);
             holder.text.setText(bi.images > 1 ?
-                    bi.name + " - " + context.getString(R.string.images, bi.images) :
+                    bi.name + " - " + context.getString(R.string.image_editor_images, bi.images) :
                     bi.name);
             ImageLoader.getInstance().displayImage("file://" + bi.path, holder.icon);
             return convertView;
         } else { // show images in a bucket
             ImageView imageView;
             if (convertView == null) {  // if it's not recycled, initialize some attributes
-                imageView = (ImageView) mInflater.inflate(R.layout.imageitem, null);
+                imageView = (ImageView) mInflater.inflate(R.layout.image_editor_imageitem, null);
             } else {
                 imageView = (ImageView) convertView;
             }

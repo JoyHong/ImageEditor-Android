@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/image_editor_materialcolorpicker__black"
     android:fitsSystemWindows="true"
-    android:background="@color/materialcolorpicker__black"
     android:orientation="vertical">
 
     <FrameLayout
@@ -11,7 +11,7 @@
         android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:layout_alignParentTop="true"
-        android:background="@color/main_backgroud">
+        android:background="@color/image_editor_main_backgroud">
 
         <ImageView
             android:id="@+id/back_btn"
@@ -20,17 +20,7 @@
             android:layout_gravity="left|center_vertical"
             android:layout_margin="10dp"
             android:layout_marginLeft="0dp"
-            android:src="@drawable/back_arrow" />
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/app_name"
-            android:textColor="#ffffff"
-            android:textSize="@dimen/image_edit_text_size" />
+            android:src="@drawable/image_editor_back_arrow" />
 
         <ViewFlipper
             android:id="@+id/banner_flipper"
@@ -46,27 +36,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:gravity="center"
-                android:text="@string/save"
+                android:text="@string/image_editor_save"
                 android:textColor="#ffffff"
-                android:textSize="@dimen/image_edit_text_size" />
+                android:textSize="@dimen/image_editor_image_edit_text_size" />
 
             <TextView
                 android:id="@+id/apply"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:gravity="center"
-                android:text="@string/apply"
+                android:text="@string/image_editor_apply"
                 android:textColor="#ffffff"
-                android:textSize="@dimen/image_edit_text_size" />
+                android:textSize="@dimen/image_editor_image_edit_text_size" />
         </ViewFlipper>
     </FrameLayout>
 
     <com.xinlan.imageeditlibrary.editimage.view.CustomViewPager
         android:id="@+id/bottom_gallery"
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/bottom_banner_height"
+        android:layout_height="@dimen/image_editor_bottom_banner_height"
         android:layout_alignParentBottom="true"
-        android:background="@color/main_backgroud"
+        android:background="@color/image_editor_main_backgroud"
         android:overScrollMode="never" />
 
     <FrameLayout
@@ -126,20 +116,22 @@
         android:layout_above="@id/bottom_gallery"
         android:layout_alignParentRight="true"
         android:orientation="horizontal"
-        android:paddingBottom="5dp"
         android:paddingLeft="8dp"
-        android:paddingRight="10dp">
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
         <ImageView
             android:id="@+id/uodo_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
-            android:src="@drawable/uodo" />
+            android:src="@drawable/image_editor_uodo" />
+
         <ImageView
             android:id="@+id/redo_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/redo" />
+            android:src="@drawable/image_editor_redo" />
     </LinearLayout>
 
 </RelativeLayout>

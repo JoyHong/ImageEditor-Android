@@ -69,11 +69,11 @@ public class StickerItem {
         // 导入工具按钮位图
         if (deleteBit == null) {
             deleteBit = BitmapFactory.decodeResource(context.getResources(),
-                    R.drawable.sticker_delete);
+                    R.drawable.image_editor_sticker_delete);
         }// end if
         if (rotateBit == null) {
             rotateBit = BitmapFactory.decodeResource(context.getResources(),
-                    R.drawable.sticker_rotate);
+                    R.drawable.image_editor_sticker_rotate);
         }// end if
     }
 

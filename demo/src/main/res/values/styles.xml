@@ -8,11 +8,11 @@
 
 <!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorPrimary">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/image_editor_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/image_editor_colorPrimaryDark</item>
+        <item name="colorAccent">@color/image_editor_colorAccent</item>
+        <item name="android:textColorPrimary">@color/image_editor_colorAccent</item>
+        <item name="android:windowBackground">@color/image_editor_colorPrimary</item>
     </style>
 
 </resources>

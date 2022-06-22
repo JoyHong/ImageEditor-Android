@@ -1,32 +1,32 @@
 <resources>
-    <string name="no_images">geen gevonden afbeelding</string>
-    <string name="images">%d afbeeldingen</string>
-    <string name="save">redden</string>
-    <string name="apply">toepassen</string>
+    <string name="image_editor_no_images">geen gevonden afbeelding</string>
+    <string name="image_editor_images">%d afbeeldingen</string>
+    <string name="image_editor_save">redden</string>
+    <string name="image_editor_apply">toepassen</string>
 
-    <string name="stickers">Stickers</string>
-    <string name="filter">filter</string>
-    <string name="crop">gewas</string>
-    <string name="rotate">draaien</string>
-    <string name="text">Sms</string>
-    <string name="edit">bewerken</string>
+    <string name="image_editor_stickers">Stickers</string>
+    <string name="image_editor_filter">filter</string>
+    <string name="image_editor_crop">gewas</string>
+    <string name="image_editor_rotate">draaien</string>
+    <string name="image_editor_text">Sms</string>
+    <string name="image_editor_edit">bewerken</string>
 
 
 
-    <string name="materialcolorpicker__app_name">Android Materiaal Kleurkiezer Dialoogvenster</string>
-    <string name="materialcolorpicker__descLib">Dialoogvenster Materiaalkleurkiezer</string>
-    <string name="materialcolorpicker__errHex">Hex-code-indeling onjuist</string>
-    <string name="materialcolorpicker__inputColor">Kleur:</string>
-    <string name="materialcolorpicker__btnSelectColor">Selecteren</string>
-    <string name="saving_image">redden...</string>
-    <string name="input_hint">invoertekst ...</string>
+    <string name="image_editor_materialcolorpicker__app_name">Android Materiaal Kleurkiezer Dialoogvenster</string>
+    <string name="image_editor_materialcolorpicker__descLib">Dialoogvenster Materiaalkleurkiezer</string>
+    <string name="image_editor_materialcolorpicker__errHex">Hex-code-indeling onjuist</string>
+    <string name="image_editor_materialcolorpicker__inputColor">Kleur:</string>
+    <string name="image_editor_materialcolorpicker__btnSelectColor">Selecteren</string>
+    <string name="image_editor_saving_image">redden...</string>
+    <string name="image_editor_input_hint">invoertekst ...</string>
 
-    <string name="no_choose">kies een afbeelding om te bewerken</string>
-    <string name="auto_newline">AutoNewline</string>
-    <string name="save_error">Fout opslaan!</string>
-    <string name="handing">Laden...</string>
+    <string name="image_editor_no_choose">kies een afbeelding om te bewerken</string>
+    <string name="image_editor_auto_newline">AutoNewline</string>
+    <string name="image_editor_save_error">Fout opslaan!</string>
+    <string name="image_editor_handing">Laden...</string>
 
-    <string-array name="filters">
+    <string-array name="image_editor_filters">
         <item>oorsprong</item>
         <item>zacht</item>
         <item>zwart</item>
@@ -42,14 +42,14 @@
         <item>mozaïek</item>
     </string-array>
 
-    <string name="more">meer</string>
-    <string name="exit_without_save">De bewerkte afbeelding wordt niet opgeslagen. Wil je uitstappen\?</string>
-    <string name="confirm">bevestigen</string>
-    <string name="cancel">Annuleren</string>
+    <string name="image_editor_more">meer</string>
+    <string name="image_editor_exit_without_save">De bewerkte afbeelding wordt niet opgeslagen. Wil je uitstappen\?</string>
+    <string name="image_editor_confirm">bevestigen</string>
+    <string name="image_editor_cancel">Annuleren</string>
 
-    <string name="beauty">schoonheid</string>
-    <string name="smooth">glad</string>
-    <string name="white_skin">witte huid</string>
-    <string name="app_name">AfbeeldingBewerkenBibliotheek</string>
-    <string name="sticker">sticker</string>
+    <string name="image_editor_beauty">schoonheid</string>
+    <string name="image_editor_smooth">glad</string>
+    <string name="image_editor_white_skin">witte huid</string>
+    <string name="image_editor_app_name">AfbeeldingBewerkenBibliotheek</string>
+    <string name="image_editor_sticker">sticker</string>
 </resources>

@@ -38,7 +38,7 @@ public class BucketsFragment extends Fragment {
 	@Override
 	public View onCreateView(final LayoutInflater inflater,
 			final ViewGroup container, final Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.gallery, null);
+		View v = inflater.inflate(R.layout.image_editor_gallery, null);
 
 		String[] projection = new String[] { MediaStore.Images.Media.DATA,
 				MediaStore.Images.Media.BUCKET_DISPLAY_NAME,
@@ -73,7 +73,7 @@ public class BucketsFragment extends Fragment {
 		}
 
 		if (buckets.isEmpty()) {
-			Toast.makeText(getActivity(), R.string.no_images,
+			Toast.makeText(getActivity(), R.string.image_editor_no_images,
 					Toast.LENGTH_SHORT).show();
 			getActivity().finish();
 		} else {
