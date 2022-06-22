@@ -143,7 +143,7 @@ public class EditImageActivity extends BaseActivity {
     private void getData() {
         filePath = getIntent().getParcelableExtra(FILE_PATH);
         saveFilePath = getIntent().getStringExtra(EXTRA_OUTPUT);// 保存图片路径
-//        loadImage(filePath);
+        loadImage(filePath);
     }
 
     private void initView() {
