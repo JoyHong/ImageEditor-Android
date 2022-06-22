@@ -6,9 +6,6 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.RectF;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -36,7 +33,6 @@ import com.xinlan.imageeditlibrary.editimage.fragment.MainMenuFragment;
 import com.xinlan.imageeditlibrary.editimage.fragment.PaintFragment;
 import com.xinlan.imageeditlibrary.editimage.fragment.RotateFragment;
 import com.xinlan.imageeditlibrary.editimage.fragment.StickerFragment;
-import com.xinlan.imageeditlibrary.editimage.utils.FileUtil;
 import com.xinlan.imageeditlibrary.editimage.view.CropImageView;
 import com.xinlan.imageeditlibrary.editimage.view.CustomPaintView;
 import com.xinlan.imageeditlibrary.editimage.view.CustomViewPager;
@@ -60,14 +56,11 @@ import java.io.FileOutputStream;
  *         add new modules
  */
 public class EditImageActivity extends BaseActivity {
-    public static final String EXTRA_IMAGE_URI = "image_uri";
-
     public static final String EXTRA_IMAGE_SAVE_PATH = "image_save_path";
 
 
     public static final String FILE_PATH = "file_path";
     public static final String EXTRA_OUTPUT = "extra_output";
-    public static final String SAVE_FILE_PATH = "save_file_path";
 
     public static final String IMAGE_IS_EDIT = "image_is_edit";
 
@@ -93,11 +86,8 @@ public class EditImageActivity extends BaseActivity {
     private EditImageActivity mContext;
     private Bitmap mainBitmap;// 底层显示Bitmap
     public ImageViewTouch mainImage;
-    private View backBtn;
 
     public ViewFlipper bannerFlipper;
-    private View applyBtn;// 应用按钮
-    private View saveBtn;// 保存按钮
 
     public StickerView mStickerView;// 贴图层View
     public CropImageView mCropPanel;// 剪切操作控件
@@ -106,7 +96,6 @@ public class EditImageActivity extends BaseActivity {
     public CustomPaintView mPaintView;//涂鸦模式画板
 
     public CustomViewPager bottomGallery;// 底部gallery
-    private BottomGalleryAdapter mBottomGalleryAdapter;// 底部gallery
     private MainMenuFragment mMainMenuFragment;// Menu
     public StickerFragment mStickerFragment;// 贴图Fragment
     public FilterListFragment mFilterListFragment;// 滤镜FliterListFragment
@@ -126,12 +115,10 @@ public class EditImageActivity extends BaseActivity {
      * @param requestCode
      */
     public static void start(Activity context,  Uri editImagePath, final String outputPath, final int requestCode) {
-         editImagePath = Uri.parse("1222222222");
         if (TextUtils.isEmpty(editImagePath.getPath())) {
             Toast.makeText(context, R.string.no_choose, Toast.LENGTH_SHORT).show();
             return;
         }
-
         Intent it = new Intent(context, EditImageActivity.class);
         it.putExtra(EditImageActivity.FILE_PATH, editImagePath);
         it.putExtra(EditImageActivity.EXTRA_OUTPUT, outputPath);
@@ -165,34 +152,32 @@ public class EditImageActivity extends BaseActivity {
         imageWidth = metrics.widthPixels / 2;
         imageHeight = metrics.heightPixels / 2;
 
-        bannerFlipper = (ViewFlipper) findViewById(R.id.banner_flipper);
+        bannerFlipper = findViewById(R.id.banner_flipper);
         bannerFlipper.setInAnimation(this, R.anim.in_bottom_to_top);
         bannerFlipper.setOutAnimation(this, R.anim.out_bottom_to_top);
-        applyBtn = findViewById(R.id.apply);
+        // 应用按钮
+        View applyBtn = findViewById(R.id.apply);
         applyBtn.setOnClickListener(new ApplyBtnClick());
-        saveBtn = findViewById(R.id.save_btn);
+        // 保存按钮
+        View saveBtn = findViewById(R.id.save_btn);
         saveBtn.setOnClickListener(new SaveBtnClick());
 
-        mainImage = (ImageViewTouch) findViewById(R.id.main_image);
-        backBtn = findViewById(R.id.back_btn);// 退出按钮
-        backBtn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        mainImage = findViewById(R.id.main_image);
+        View backBtn = findViewById(R.id.back_btn);// 退出按钮
+        backBtn.setOnClickListener(v -> onBackPressed());
 
-        mStickerView = (StickerView) findViewById(R.id.sticker_panel);
-        mCropPanel = (CropImageView) findViewById(R.id.crop_panel);
-        mRotatePanel = (RotateImageView) findViewById(R.id.rotate_panel);
-        mTextStickerView = (TextStickerView) findViewById(R.id.text_sticker_panel);
-        mPaintView = (CustomPaintView) findViewById(R.id.custom_paint_view);
+        mStickerView = findViewById(R.id.sticker_panel);
+        mCropPanel = findViewById(R.id.crop_panel);
+        mRotatePanel = findViewById(R.id.rotate_panel);
+        mTextStickerView = findViewById(R.id.text_sticker_panel);
+        mPaintView = findViewById(R.id.custom_paint_view);
 
         // 底部gallery
-        bottomGallery = (CustomViewPager) findViewById(R.id.bottom_gallery);
+        bottomGallery = findViewById(R.id.bottom_gallery);
         //bottomGallery.setOffscreenPageLimit(7);
         mMainMenuFragment = MainMenuFragment.newInstance();
-        mBottomGalleryAdapter = new BottomGalleryAdapter(
+        // 底部gallery
+        BottomGalleryAdapter mBottomGalleryAdapter = new BottomGalleryAdapter(
                 this.getSupportFragmentManager());
         mStickerFragment = StickerFragment.newInstance();
         mFilterListFragment = FilterListFragment.newInstance();
@@ -205,13 +190,10 @@ public class EditImageActivity extends BaseActivity {
         bottomGallery.setAdapter(mBottomGalleryAdapter);
 
 
-        mainImage.setFlingListener(new ImageViewTouch.OnImageFlingListener() {
-            @Override
-            public void onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-                //System.out.println(e1.getAction() + " " + e2.getAction() + " " + velocityX + "  " + velocityY);
-                if (velocityY > 1) {
-                    closeInputMethod();
-                }
+        mainImage.setFlingListener((e1, e2, velocityX, velocityY) -> {
+            //System.out.println(e1.getAction() + " " + e2.getAction() + " " + velocityX + "  " + velocityY);
+            if (velocityY > 1) {
+                closeInputMethod();
             }
         });
 
@@ -325,11 +307,7 @@ public class EditImageActivity extends BaseActivity {
         } else {//图片还未被保存    弹出提示框确认
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
             alertDialogBuilder.setMessage(R.string.exit_without_save)
-                    .setCancelable(false).setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    mContext.finish();
-                }
-            }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    .setCancelable(false).setPositiveButton(R.string.confirm, (dialog, id) -> mContext.finish()).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     dialog.cancel();
                 }
