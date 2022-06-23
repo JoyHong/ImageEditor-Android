@@ -19,6 +19,7 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
@@ -127,6 +128,7 @@ public class EditImageActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         checkInitImageLoader();
         setContentView(R.layout.image_editor_activity_image_edit);
         initView();
@@ -431,12 +433,11 @@ public class EditImageActivity extends BaseActivity {
 
     protected void onSaveTaskDone() {
         Intent returnIntent = new Intent();
-        returnIntent.putExtra(FILE_PATH, filePath);
-        returnIntent.putExtra(EXTRA_OUTPUT, saveFilePath);
-        returnIntent.putExtra(IMAGE_IS_EDIT, mOpTimes > 0);
-
-//        FileUtil.ablumUpdate(this, saveFilePath);
-        setResult(RESULT_OK, returnIntent);
+        if (mOpTimes > 0){
+            setResult(RESULT_OK, returnIntent);
+        }else {
+            setResult(RESULT_CANCELED,returnIntent);
+        }
         finish();
     }
 

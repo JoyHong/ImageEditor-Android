@@ -50,7 +50,6 @@ public class CropFragment extends BaseEditFragment {
 	private static List<RatioItem> dataList = new ArrayList<RatioItem>();
 	static {
 		// init data
-		dataList.add(new RatioItem("none", -1f));
 		dataList.add(new RatioItem("1:1", 1f));
 		dataList.add(new RatioItem("1:2", 1 / 2f));
 		dataList.add(new RatioItem("1:3", 1 / 3f));
@@ -161,7 +160,8 @@ public class CropFragment extends BaseEditFragment {
 			@Override
 			public void run() {
 				final RectF r = activity.mainImage.getBitmapRect();
-				activity.mCropPanel.setCropRect(r);
+				mCropPanel.setRatioCropRect(activity.mainImage.getBitmapRect(),
+						1f);
 			}
 		});
     }
@@ -191,7 +191,7 @@ public class CropFragment extends BaseEditFragment {
 		if (selctedTextView != null) {
 			selctedTextView.setTextColor(UNSELECTED_COLOR);
 		}
-		mCropPanel.setRatioCropRect(activity.mainImage.getBitmapRect(), -1);
+		mCropPanel.setRatioCropRect(activity.mainImage.getBitmapRect(), 1);
 		activity.bannerFlipper.showPrevious();
 	}
 
