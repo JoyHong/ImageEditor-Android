@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.appcompat.app.AlertDialog;
+
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -51,9 +52,9 @@ import java.io.FileOutputStream;
  * 图片编辑 主页面
  *
  * @author panyi
- *         <p>
- *         包含 1.贴图 2.滤镜 3.剪裁 4.底图旋转 功能
- *         add new modules
+ * <p>
+ * 包含 1.贴图 2.滤镜 3.剪裁 4.底图旋转 功能
+ * add new modules
  */
 public class EditImageActivity extends BaseActivity {
     public static final String EXTRA_IMAGE_SAVE_PATH = "image_save_path";
@@ -114,7 +115,7 @@ public class EditImageActivity extends BaseActivity {
      * @param outputPath
      * @param requestCode
      */
-    public static void start(Activity context,  Uri editImagePath, final String outputPath, final int requestCode) {
+    public static void start(Activity context, Uri editImagePath, final String outputPath, final int requestCode) {
         if (TextUtils.isEmpty(editImagePath.getPath())) {
             Toast.makeText(context, R.string.image_editor_no_choose, Toast.LENGTH_SHORT).show();
             return;
@@ -267,7 +268,7 @@ public class EditImageActivity extends BaseActivity {
     private final class LoadImageTask extends AsyncTask<Uri, Void, Bitmap> {
         @Override
         protected Bitmap doInBackground(Uri... params) {
-            return BitmapUtils.getSampledBitmap(EditImageActivity.this,params[0], imageWidth,
+            return BitmapUtils.getSampledBitmap(EditImageActivity.this, params[0], imageWidth,
                     imageHeight);
         }
 
@@ -393,7 +394,7 @@ public class EditImageActivity extends BaseActivity {
 
         if (mainBitmap == null || mainBitmap != newBit) {
             if (needPushUndoStack) {
-                mRedoUndoController.switchMainBit(mainBitmap,newBit);
+                mRedoUndoController.switchMainBit(mainBitmap, newBit);
                 increaseOpTimes();
             }
             mainBitmap = newBit;
@@ -433,10 +434,10 @@ public class EditImageActivity extends BaseActivity {
 
     protected void onSaveTaskDone() {
         Intent returnIntent = new Intent();
-        if (mOpTimes > 0){
+        if (mOpTimes > 0) {
             setResult(RESULT_OK, returnIntent);
-        }else {
-            setResult(RESULT_CANCELED,returnIntent);
+        } else {
+            setResult(RESULT_CANCELED, returnIntent);
         }
         finish();
     }
@@ -461,7 +462,6 @@ public class EditImageActivity extends BaseActivity {
      * 完成后退出
      */
     private final class SaveImageTask extends AsyncTask<Bitmap, Void, Boolean> {
-        private Dialog dialog;
 
         @Override
         protected Boolean doInBackground(Bitmap... params) {
@@ -474,27 +474,21 @@ public class EditImageActivity extends BaseActivity {
         @Override
         protected void onCancelled() {
             super.onCancelled();
-            dialog.dismiss();
         }
 
         @Override
         protected void onCancelled(Boolean result) {
             super.onCancelled(result);
-            dialog.dismiss();
         }
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = EditImageActivity.getLoadingDialog(mContext, R.string.image_editor_saving_image, false);
-            dialog.show();
         }
 
         @Override
         protected void onPostExecute(Boolean result) {
             super.onPostExecute(result);
-            dialog.dismiss();
-
             if (result) {
                 resetOpTimes();
                 onSaveTaskDone();
