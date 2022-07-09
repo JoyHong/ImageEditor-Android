@@ -18,6 +18,7 @@ import com.xinlan.imageeditlibrary.editimage.EditImageActivity;
 import com.xinlan.imageeditlibrary.editimage.ModuleConfig;
 import com.xinlan.imageeditlibrary.editimage.fliter.PhotoProcessing;
 import com.xinlan.imageeditlibrary.editimage.view.imagezoom.ImageViewTouchBase;
+
 import java.lang.ref.WeakReference;
 
 
@@ -145,9 +146,9 @@ public class BeautyFragment extends BaseEditFragment implements SeekBar.OnSeekBa
     }
 
     public void applyBeauty() {
-        if (mResultBitmapRef != null){
+        if (mResultBitmapRef != null) {
             if (mResultBitmapRef.get() != null && (mSmooth != 0 || mWhiteSkin != 0)) {
-                activity.changeMainBitmap(mResultBitmapRef.get(),true);
+                activity.changeMainBitmap(mResultBitmapRef.get(), true);
             }
         }
         backToMain();
@@ -160,7 +161,6 @@ public class BeautyFragment extends BaseEditFragment implements SeekBar.OnSeekBa
         private float smoothVal;
         private float whiteVal;
 
-        private Dialog dialog;
         private Bitmap srcBitmap;
 
         public BeautyTask(float smooth, float white) {
@@ -171,9 +171,6 @@ public class BeautyFragment extends BaseEditFragment implements SeekBar.OnSeekBa
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.image_editor_handing,
-                    false);
-            dialog.show();
         }
 
         @Override
@@ -188,20 +185,17 @@ public class BeautyFragment extends BaseEditFragment implements SeekBar.OnSeekBa
         @Override
         protected void onCancelled() {
             super.onCancelled();
-            dialog.dismiss();
         }
 
         @TargetApi(Build.VERSION_CODES.HONEYCOMB)
         @Override
         protected void onCancelled(Bitmap result) {
             super.onCancelled(result);
-            dialog.dismiss();
         }
 
         @Override
         protected void onPostExecute(Bitmap result) {
             super.onPostExecute(result);
-            dialog.dismiss();
             if (result == null)
                 return;
 

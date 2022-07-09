@@ -108,7 +108,7 @@ public class FilterListFragment extends BaseEditFragment {
             return;
         } else {// 经滤镜处理后的图片
             // System.out.println("滤镜图片");
-            activity.changeMainBitmap(fliterBit,true);
+            activity.changeMainBitmap(fliterBit, true);
             backToMain();
         }// end if
     }
@@ -123,15 +123,16 @@ public class FilterListFragment extends BaseEditFragment {
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams.MATCH_PARENT);
         params.gravity = Gravity.CENTER_VERTICAL;
-        params.leftMargin = 20;
-        params.rightMargin = 20;
         mFilterGroup.removeAllViews();
         for (int i = 0, len = fliters.length; i < len; i++) {
             TextView text = new TextView(activity);
             text.setTextColor(Color.WHITE);
             text.setTextSize(16);
+            text.setBackground(getContext().getResources().getDrawable(R.drawable.image_edit_ripple));
+            text.setPadding(20, 0, 20, 0);
+            text.setGravity(Gravity.CENTER);
             text.setText(fliters[i]);
             mFilterGroup.addView(text, params);
             text.setTag(i);
@@ -171,7 +172,6 @@ public class FilterListFragment extends BaseEditFragment {
      * @author panyi
      */
     private final class ProcessingImage extends AsyncTask<Integer, Void, Bitmap> {
-        private Dialog dialog;
         private Bitmap srcBitmap;
 
         @Override
@@ -189,20 +189,17 @@ public class FilterListFragment extends BaseEditFragment {
         @Override
         protected void onCancelled() {
             super.onCancelled();
-            dialog.dismiss();
         }
 
         @TargetApi(Build.VERSION_CODES.HONEYCOMB)
         @Override
         protected void onCancelled(Bitmap result) {
             super.onCancelled(result);
-            dialog.dismiss();
         }
 
         @Override
         protected void onPostExecute(Bitmap result) {
             super.onPostExecute(result);
-            dialog.dismiss();
             if (result == null)
                 return;
             if (fliterBit != null && (!fliterBit.isRecycled())) {
@@ -216,9 +213,6 @@ public class FilterListFragment extends BaseEditFragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = BaseActivity.getLoadingDialog(getActivity(), R.string.image_editor_handing,
-                    false);
-            dialog.show();
         }
 
     }// end inner class
