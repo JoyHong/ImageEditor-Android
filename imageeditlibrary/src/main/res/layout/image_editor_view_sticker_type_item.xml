@@ -1,9 +1,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="wrap_content"
               android:layout_height="@dimen/image_editor_bottom_banner_height"
-              android:orientation="vertical"
-              android:paddingLeft="18dp"
-              android:paddingRight="18dp">
+              android:orientation="vertical">
 
     <ImageView
         android:id="@+id/icon"
@@ -17,9 +15,12 @@
 
     <TextView
         android:id="@+id/text"
+        android:paddingStart="@dimen/image_editor_image_edit_text_padding"
+        android:paddingEnd="@dimen/image_editor_image_edit_text_padding"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/image_edit_ripple"
         android:gravity="center"
         android:textColor="#ffffff"
         android:textSize="@dimen/image_editor_image_edit_text_size"/>

@@ -6,13 +6,14 @@
 
     <ImageView
         android:id="@+id/back_to_main"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
+        style="@style/image_editor_subtitle"
         android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
         android:src="@drawable/image_editor_image_edit_back" />
 
     <EditText
         android:id="@+id/text_input"
+        style="@style/image_editor_subtitle_item"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -21,8 +22,7 @@
         android:hint="@string/image_editor_input_hint"
         android:paddingLeft="8dp"
         android:textColor="@color/image_editor_white"
-        android:textColorHint="@color/image_editor_materialcolorpicker__grey"
-        android:textSize="@dimen/image_editor_image_edit_text_size" />
+        android:textColorHint="@color/image_editor_materialcolorpicker__grey" />
 
     <CheckBox
         android:id="@+id/check_auto_newline"

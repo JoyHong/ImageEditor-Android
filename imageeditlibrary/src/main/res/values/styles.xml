@@ -1,4 +1,5 @@
 <resources>
+
     <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/image_editor_colorPrimary</item>
         <item name="colorPrimaryDark">@color/image_editor_colorPrimaryDark</item>
@@ -9,6 +10,7 @@
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowBackground">@color/image_editor_main_backgroud</item>
+        <item name="android:actionBarSize">@dimen/image_editor_action_bar_size</item>
     </style>
 
 
@@ -23,4 +25,16 @@
         <item name="android:progressDrawable">@drawable/image_editor_seekbar_bg</item>
     </style>
 
+    <style name="image_editor_subtitle">
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@drawable/image_edit_ripple</item>
+    </style>
+
+    <style name="image_editor_subtitle_item" parent="image_editor_subtitle">
+        <item name="android:textSize">@dimen/image_editor_image_edit_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/image_editor_white</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
