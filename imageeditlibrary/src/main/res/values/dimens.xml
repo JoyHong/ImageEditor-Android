@@ -5,8 +5,9 @@
     <dimen name="image_editor_image_edit_text_size">16sp</dimen>
     <dimen name="image_editor_image_edit_text_padding">7dp</dimen>
     <dimen name="image_editor_image_edit_menu_margin">20dp</dimen>
-    <dimen name="image_editor_materialcolorpicker__activity_horizontal_margin">16dp</dimen>
-    <dimen name="image_editor_materialcolorpicker__activity_vertical_margin">16dp</dimen>
-    <dimen name ="image_editor_bottom_banner_height">80dp</dimen>
-    <dimen name ="image_editor_seek_bar_height">2dp</dimen>
+    <dimen name="image_editor_material_color_picker_horizontal_margin">16dp</dimen>
+    <dimen name="image_editor_material_color_picker_vertical_margin">16dp</dimen>
+    <dimen name="image_editor_bottom_banner_height">80dp</dimen>
+    <dimen name="image_editor_seek_bar_height">2dp</dimen>
+    <dimen name="image_editor_action_bar_size">56dp</dimen>
 </resources>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <View
         android:id="@+id/colorView"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:elevation="2dp"/>
+        android:elevation="2dp" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:paddingBottom="@dimen/image_editor_materialcolorpicker__activity_vertical_margin"
-        android:paddingLeft="@dimen/image_editor_materialcolorpicker__activity_horizontal_margin"
-        android:paddingRight="@dimen/image_editor_materialcolorpicker__activity_horizontal_margin"
-        android:paddingTop="@dimen/image_editor_materialcolorpicker__activity_vertical_margin">
+        android:paddingLeft="@dimen/image_editor_material_color_picker_horizontal_margin"
+        android:paddingTop="@dimen/image_editor_material_color_picker_vertical_margin"
+        android:paddingRight="@dimen/image_editor_material_color_picker_horizontal_margin"
+        android:paddingBottom="@dimen/image_editor_material_color_picker_vertical_margin">
 
         <TextView
             android:id="@+id/redToolTip"
@@ -27,20 +27,20 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_red_light"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:textSize="@dimen/image_editor_image_edit_text_size" />
 
         <SeekBar
             android:id="@+id/redSeekBar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/redToolTip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:max="255"
             android:maxHeight="3dip"
             android:minHeight="3dip"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
             android:progressDrawable="@drawable/image_editor_red_progress"
-            android:thumbTint="@android:color/holo_red_light"/>
+            android:thumbTint="@android:color/holo_red_light" />
 
         <TextView
             android:id="@+id/greenToolTip"
@@ -50,20 +50,20 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_green_light"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:textSize="@dimen/image_editor_image_edit_text_size" />
 
         <SeekBar
             android:id="@+id/greenSeekBar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/greenToolTip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:max="255"
             android:maxHeight="3dip"
             android:minHeight="3dip"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
             android:progressDrawable="@drawable/image_editor_materialcolorpicker__green_progress"
-            android:thumbTint="@android:color/holo_green_light"/>
+            android:thumbTint="@android:color/holo_green_light" />
 
         <TextView
             android:id="@+id/blueToolTip"
@@ -73,7 +73,7 @@
             android:fontFamily="sans-serif-medium"
             android:singleLine="true"
             android:textColor="@android:color/holo_blue_light"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:textSize="@dimen/image_editor_image_edit_text_size" />
 
         <SeekBar
             android:id="@+id/blueSeekBar"
@@ -113,7 +113,6 @@
             android:id="@+id/okColorButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minHeight="30dp"
             android:layout_alignBaseline="@+id/codHex"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
@@ -121,6 +120,7 @@
             android:background="@drawable/image_editor_shape_color_selected_btn"
             android:clickable="true"
             android:gravity="center"
+            android:minHeight="30dp"
             android:text="@string/image_editor_materialcolorpicker__btnSelectColor"
             android:textColor="@color/image_editor_white" />
 

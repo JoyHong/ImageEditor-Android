@@ -9,18 +9,18 @@
     <FrameLayout
         android:id="@+id/banner"
         android:layout_width="fill_parent"
-        android:layout_height="45dp"
+        android:layout_height="?attr/actionBarSize"
         android:layout_alignParentTop="true"
         android:background="@color/image_editor_main_backgroud">
 
         <ImageView
             android:id="@+id/back_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="55dp"
+            style="@style/image_editor_subtitle"
             android:layout_gravity="left|center_vertical"
             android:layout_margin="10dp"
             android:layout_marginLeft="0dp"
-            android:src="@drawable/image_editor_back_arrow" />
+            android:scaleType="centerInside"
+            android:src="@drawable/image_editor_image_edit_back" />
 
         <ViewFlipper
             android:id="@+id/banner_flipper"
@@ -33,21 +33,17 @@
 
             <TextView
                 android:id="@+id/save_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                style="@style/image_editor_subtitle_item"
                 android:gravity="center"
                 android:text="@string/image_editor_save"
-                android:textColor="#ffffff"
-                android:textSize="@dimen/image_editor_image_edit_text_size" />
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/apply"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                style="@style/image_editor_subtitle_item"
                 android:gravity="center"
                 android:text="@string/image_editor_apply"
-                android:textColor="#ffffff"
-                android:textSize="@dimen/image_editor_image_edit_text_size" />
+                android:textColor="#ffffff" />
         </ViewFlipper>
     </FrameLayout>
 

@@ -6,9 +6,9 @@
 
     <ImageView
         android:id="@+id/back_to_main"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
+        style="@style/image_editor_subtitle"
         android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
         android:src="@drawable/image_editor_image_edit_back" />
 
     <com.xinlan.imageeditlibrary.editimage.view.PaintModeView

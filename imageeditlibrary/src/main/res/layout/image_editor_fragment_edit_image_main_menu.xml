@@ -1,9 +1,8 @@
-<HorizontalScrollView
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:scrollbars="none"
     android:layout_width="wrap_content"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -12,81 +11,48 @@
 
         <TextView
             android:id="@+id/btn_paint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_editor_subtitle_item"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/image_editor_image_edit_menu_margin"
-            android:gravity="center"
-            android:text="@string/image_editor_edit"
-            android:textColor="@color/image_editor_white"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:layout_marginStart="@dimen/image_editor_material_color_picker_horizontal_margin"
+            android:text="@string/image_editor_edit" />
 
         <TextView
             android:id="@+id/btn_stickers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_editor_subtitle_item"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/image_editor_image_edit_menu_margin"
             android:gravity="center"
-            android:text="@string/image_editor_stickers"
-            android:textColor="@color/image_editor_white"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:text="@string/image_editor_stickers" />
 
         <TextView
             android:id="@+id/btn_filter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_editor_subtitle_item"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/image_editor_image_edit_menu_margin"
-            android:gravity="center"
-            android:text="@string/image_editor_filter"
-            android:textColor="@color/image_editor_white"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:text="@string/image_editor_filter" />
 
         <TextView
             android:id="@+id/btn_crop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_editor_subtitle_item"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/image_editor_image_edit_menu_margin"
-            android:gravity="center"
-            android:text="@string/image_editor_crop"
-            android:textColor="@color/image_editor_white"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:text="@string/image_editor_crop" />
 
         <TextView
             android:id="@+id/btn_rotate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_editor_subtitle_item"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/image_editor_image_edit_menu_margin"
-            android:gravity="center"
-            android:text="@string/image_editor_rotate"
-            android:textColor="@color/image_editor_white"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:text="@string/image_editor_rotate" />
 
         <TextView
             android:id="@+id/btn_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_editor_subtitle_item"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/image_editor_image_edit_menu_margin"
-            android:gravity="center"
-            android:text="@string/image_editor_text"
-            android:textColor="@color/image_editor_white"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
+            android:text="@string/image_editor_text" />
 
         <TextView
             android:id="@+id/btn_beauty"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/image_editor_subtitle_item"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/image_editor_image_edit_menu_margin"
-            android:gravity="center"
-            android:text="@string/image_editor_beauty"
-            android:textColor="@color/image_editor_white"
-            android:textSize="@dimen/image_editor_image_edit_text_size"/>
-
+            android:layout_marginEnd="@dimen/image_editor_material_color_picker_horizontal_margin"
+            android:text="@string/image_editor_beauty" />
     </LinearLayout>
 </HorizontalScrollView>
 
