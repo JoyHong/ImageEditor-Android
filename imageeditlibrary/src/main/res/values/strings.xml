@@ -1,6 +1,6 @@
 <resources>
-    <string name="image_editor_no_images">No Found The Image</string>
-    <string name="image_editor_images">%d Images</string>
+    <string name="image_editor_no_images">No found the image</string>
+    <string name="image_editor_images">%d images</string>
     <string name="image_editor_save">Save</string>
     <string name="image_editor_apply">Apply</string>
 
@@ -11,17 +11,17 @@
     <string name="image_editor_text">Text</string>
     <string name="image_editor_edit">Edit</string>
 
-    <string name="image_editor_materialcolorpicker__app_name">Android Material Color Picker Dialog</string>
-    <string name="image_editor_materialcolorpicker__descLib">Material Color Picker Dialog</string>
-    <string name="image_editor_materialcolorpicker__errHex">Hex Code Format incorrect</string>
+    <string name="image_editor_materialcolorpicker__app_name">Android material color picker dialog</string>
+    <string name="image_editor_materialcolorpicker__descLib">Material color picker dialog</string>
+    <string name="image_editor_materialcolorpicker__errHex">Hex code format incorrect</string>
     <string name="image_editor_materialcolorpicker__inputColor">Color:</string>
     <string name="image_editor_materialcolorpicker__btnSelectColor">Select</string>
     <string name="image_editor_saving_image">Save...</string>
     <string name="image_editor_input_hint">Input Text ...</string>
 
-    <string name="image_editor_no_choose">Please Choose A Image For Edit</string>
+    <string name="image_editor_no_choose">Please choose a image for edit</string>
     <string name="image_editor_auto_newline">AutoNewline</string>
-    <string name="image_editor_save_error">Save Error!</string>
+    <string name="image_editor_save_error">Save error!</string>
     <string name="image_editor_handing">Loading...</string>
 
     <string-array name="image_editor_filters">
@@ -41,13 +41,13 @@
     </string-array>
 
     <string name="image_editor_more">More</string>
-    <string name="image_editor_exit_without_save">The Edited Image Is Not Saved. Do You Want To Exit? </string>
+    <string name="image_editor_exit_without_save">The edited image is not saved. do you want to exit? </string>
     <string name="image_editor_confirm">Confirm</string>
     <string name="image_editor_cancel">Cancel</string>
 
     <string name="image_editor_beauty">Beauty</string>
     <string name="image_editor_smooth">Smooth</string>
-    <string name="image_editor_white_skin">White Skin</string>
+    <string name="image_editor_white_skin">White skin</string>
     <string name="image_editor_app_name">ImageEditLibrary</string>
     <string name="image_editor_sticker">Sticker</string>
 </resources>
