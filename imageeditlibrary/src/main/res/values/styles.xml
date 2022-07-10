@@ -26,8 +26,9 @@
     </style>
 
     <style name="image_editor_subtitle">
-        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:minWidth">?attr/actionBarSize</item>
         <item name="android:background">@drawable/image_edit_ripple</item>
     </style>
 
@@ -36,5 +37,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/image_editor_white</item>
         <item name="android:gravity">center</item>
+        <item name="android:paddingStart">@dimen/image_editor_image_edit_text_padding</item>
+        <item name="android:paddingEnd">@dimen/image_editor_image_edit_text_padding</item>
     </style>
 </resources>
