@@ -48,11 +48,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private View mTakenPhoto;//拍摄照片用于编辑
     private Uri photoURI = null;
+    private String savePath = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.image_editor_activity_main);
+        setContentView(R.layout.activity_main);
         initView();
     }
 
@@ -142,7 +143,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void editImageClick() {
         File outputFile = FileUtils.genEditFile();
-        EditImageActivity.start(this,path,outputFile.getAbsolutePath(),ACTION_REQUEST_EDITIMAGE);
+        savePath = outputFile.getAbsolutePath();
+        EditImageActivity.start(this,path,savePath,ACTION_REQUEST_EDITIMAGE);
     }
 
     /**
@@ -203,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     handleTakePhoto(data);
                     break;
                 case ACTION_REQUEST_EDITIMAGE://
-                    handleEditorImage(data);
+                    handleEditorImage();
                     break;
             }// end switch
         }
@@ -222,23 +224,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void handleEditorImage(Intent data) {
-        String newFilePath = data.getStringExtra(EditImageActivity.EXTRA_OUTPUT);
-        boolean isImageEdit = data.getBooleanExtra(EditImageActivity.IMAGE_IS_EDIT, false);
-
-        if (isImageEdit){
-            Toast.makeText(this, getString(R.string.save_path, newFilePath), Toast.LENGTH_LONG).show();
-        }else{//未编辑  还是用原来的图片
-            newFilePath = data.getParcelableExtra(EditImageActivity.FILE_PATH);;
-        }
-        //System.out.println("newFilePath---->" + newFilePath);
+    private void handleEditorImage() {
+        System.out.println("newFilePath---->" + savePath);
         //File file = new File(newFilePath);
         //System.out.println("newFilePath size ---->" + (file.length() / 1024)+"KB");
-        Log.d("image is edit", isImageEdit + "");
 
 
         LoadImageTask loadTask = new LoadImageTask();
-        loadTask.execute(getImageContentUri(this,new File(newFilePath)));
+        loadTask.execute(getImageContentUri(this,new File(savePath)));
     }
 
     private void handleSelectFromAblum(Intent data) {

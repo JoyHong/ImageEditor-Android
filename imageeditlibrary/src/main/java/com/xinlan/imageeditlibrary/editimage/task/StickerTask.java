@@ -18,7 +18,6 @@ import com.xinlan.imageeditlibrary.editimage.utils.Matrix3;
  * 贴图合成任务 抽象类
  */
 public abstract class StickerTask extends AsyncTask<Bitmap, Void, Bitmap> {
-    private Dialog dialog;
 
     private EditImageActivity mContext;
 
@@ -32,10 +31,6 @@ public abstract class StickerTask extends AsyncTask<Bitmap, Void, Bitmap> {
 
         if (mContext.isFinishing())
             return;
-
-        dialog = mContext.getLoadingDialog(mContext, R.string.image_editor_saving_image,
-                false);
-        dialog.show();
     }
 
     @Override
@@ -63,21 +58,18 @@ public abstract class StickerTask extends AsyncTask<Bitmap, Void, Bitmap> {
     @Override
     protected void onCancelled() {
         super.onCancelled();
-        dialog.dismiss();
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     protected void onCancelled(Bitmap result) {
         super.onCancelled(result);
-        dialog.dismiss();
     }
 
     @Override
     protected void onPostExecute(Bitmap result) {
         super.onPostExecute(result);
         onPostResult(result);
-        dialog.dismiss();
     }
 
     public abstract void handleImage(Canvas canvas, Matrix m);
