@@ -1,6 +1,7 @@
 <resources>
     <color name="image_editor_white">#ffffff</color>
     <color name="image_editor_main_backgroud">#4f000000</color>
+    <color name="image_editor_main_backgroud_normal">#33000000</color>
     <color name="image_editor_materialcolorpicker__white">#ffffff</color>
     <color name="image_editor_materialcolorpicker__red">#f44336</color>
     <color name="image_editor_materialcolorpicker__green">#4caf50</color>
