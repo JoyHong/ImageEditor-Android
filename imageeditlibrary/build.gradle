@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 31
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
         minSdkVersion 19
@@ -30,10 +30,10 @@ dependencies {
     testImplementation "org.robolectric:robolectric:3.3.2"
 
     api 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
-    api 'androidx.recyclerview:recyclerview:1.0.0'
-    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'androidx.recyclerview:recyclerview:1.2.1'
+    api 'androidx.appcompat:appcompat:1.4.2'
     api 'com.makeramen:roundedimageview:2.3.0'
-    api 'androidx.constraintlayout:constraintlayout:2.0.4'
+    api 'androidx.constraintlayout:constraintlayout:2.1.4'
 
 }
 
