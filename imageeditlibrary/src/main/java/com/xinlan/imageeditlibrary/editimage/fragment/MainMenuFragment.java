@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.xinlan.imageeditlibrary.R;
 import com.xinlan.imageeditlibrary.editimage.ModuleConfig;
 
@@ -121,8 +122,11 @@ public class MainMenuFragment extends BaseEditFragment implements View.OnClickLi
      * @author panyi
      */
     private void onCropClick() {
-        activity.bottomGallery.setCurrentItem(CropFragment.INDEX);
-        activity.mCropFragment.onShow();
+        //如果图片非常小，还去裁剪，没有裁剪效果，还会造成crush。在此限制图片如果太小，裁剪就不去响应。
+        if (activity.getMainBit().getHeight() > 10 && activity.getMainBit().getWidth() > 10) {
+            activity.bottomGallery.setCurrentItem(CropFragment.INDEX);
+            activity.mCropFragment.onShow();
+        }
     }
 
     /**
