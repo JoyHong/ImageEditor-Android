@@ -11,6 +11,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -165,8 +166,16 @@ public class EditImageActivity extends BaseActivity {
         saveBtn.setOnClickListener(new SaveBtnClick());
 
         mainImage = findViewById(R.id.main_image);
-        View backBtn = findViewById(R.id.back_btn);// 退出按钮
-        backBtn.setOnClickListener(v -> onBackPressed());
+
+        Toolbar toolbar = findViewById(R.id.banner);
+        toolbar.setNavigationOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+//        View backBtn = findViewById(R.id.back_btn);// 退出按钮
+//        backBtn.setOnClickListener(v -> onBackPressed());
 
         mStickerView = findViewById(R.id.sticker_panel);
         mCropPanel = findViewById(R.id.crop_panel);
