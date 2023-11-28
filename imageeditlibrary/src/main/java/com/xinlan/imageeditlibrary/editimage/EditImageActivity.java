@@ -63,6 +63,7 @@ public class EditImageActivity extends BaseActivity {
 
     public static final String FILE_PATH = "file_path";
     public static final String EXTRA_OUTPUT = "extra_output";
+    private static final String EXTRA_THEME_RES_ID = "extra_theme_res_id";
 
     public static final String IMAGE_IS_EDIT = "image_is_edit";
 
@@ -116,14 +117,15 @@ public class EditImageActivity extends BaseActivity {
      * @param outputPath
      * @param requestCode
      */
-    public static void start(Activity context, Uri editImagePath, final String outputPath, final int requestCode) {
+    public static void start(Activity context, int themeResId, Uri editImagePath, final String outputPath, final int requestCode) {
         if (TextUtils.isEmpty(editImagePath.getPath())) {
             Toast.makeText(context, R.string.image_editor_no_choose, Toast.LENGTH_SHORT).show();
             return;
         }
         Intent it = new Intent(context, EditImageActivity.class);
-        it.putExtra(EditImageActivity.FILE_PATH, editImagePath);
-        it.putExtra(EditImageActivity.EXTRA_OUTPUT, outputPath);
+        it.putExtra(FILE_PATH, editImagePath);
+        it.putExtra(EXTRA_OUTPUT, outputPath);
+        it.putExtra(EXTRA_THEME_RES_ID, themeResId);
         context.startActivityForResult(it, requestCode);
     }
 
@@ -131,6 +133,10 @@ public class EditImageActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+        int themeResId = getIntent().getIntExtra(EXTRA_THEME_RES_ID, 0);
+        if (themeResId > 0) {
+            setTheme(themeResId);
+        }
         checkInitImageLoader();
         setContentView(R.layout.image_editor_activity_image_edit);
         initView();
