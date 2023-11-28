@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -144,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void editImageClick() {
         File outputFile = FileUtils.genEditFile();
         savePath = outputFile.getAbsolutePath();
-        EditImageActivity.start(this, 0, path, savePath, ACTION_REQUEST_EDITIMAGE);
+        EditImageActivity.start(this, 0, 0, path, savePath, ACTION_REQUEST_EDITIMAGE);
     }
 
     /**
