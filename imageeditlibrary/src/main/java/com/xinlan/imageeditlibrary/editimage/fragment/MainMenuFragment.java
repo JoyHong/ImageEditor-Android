@@ -1,5 +1,6 @@
 package com.xinlan.imageeditlibrary.editimage.fragment;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -91,7 +92,7 @@ public class MainMenuFragment extends BaseEditFragment implements View.OnClickLi
             onAddTextClick();
         } else if (v == mPaintBtn) {
             onPaintClick();
-        }else if(v == mBeautyBtn){
+        } else if (v == mBeautyBtn) {
             onBeautyClick();
         }
     }
@@ -122,6 +123,10 @@ public class MainMenuFragment extends BaseEditFragment implements View.OnClickLi
      * @author panyi
      */
     private void onCropClick() {
+        Bitmap mainBit = activity.getMainBit();
+        if (mainBit == null) {
+            return;
+        }
         //如果图片非常小，还去裁剪，没有裁剪效果，还会造成crush。在此限制图片如果太小，裁剪就不去响应。
         if (activity.getMainBit().getHeight() > 10 && activity.getMainBit().getWidth() > 10) {
             activity.bottomGallery.setCurrentItem(CropFragment.INDEX);
@@ -157,7 +162,7 @@ public class MainMenuFragment extends BaseEditFragment implements View.OnClickLi
         activity.mPaintFragment.onShow();
     }
 
-    private void onBeautyClick(){
+    private void onBeautyClick() {
         activity.bottomGallery.setCurrentItem(BeautyFragment.INDEX);
         activity.mBeautyFragment.onShow();
     }

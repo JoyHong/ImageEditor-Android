@@ -246,6 +246,9 @@ public class CropFragment extends BaseEditFragment {
             // canvas.drawRect(cropRect, paint);
             // Bitmap resultBit = Bitmap.createBitmap(params[0]).copy(
             // Bitmap.Config.ARGB_8888, true);
+            if (cropRect.left < 0 || cropRect.top < 0) {
+                return null;
+            }
             Bitmap resultBit = Bitmap.createBitmap(params[0],
                     (int) cropRect.left, (int) cropRect.top,
                     (int) cropRect.width(), (int) cropRect.height());
