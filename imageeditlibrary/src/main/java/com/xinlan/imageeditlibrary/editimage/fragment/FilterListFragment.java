@@ -184,7 +184,7 @@ public class FilterListFragment extends BaseEditFragment {
             if (mainBit == null) {
                 return null;
             }
-            srcBitmap = Bitmap.createBitmap(activity.getMainBit().copy(
+            srcBitmap = Bitmap.createBitmap(mainBit.copy(
                     Bitmap.Config.ARGB_8888, true));
             return PhotoProcessing.filterPhoto(srcBitmap, type);
         }
