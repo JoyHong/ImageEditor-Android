@@ -180,7 +180,10 @@ public class FilterListFragment extends BaseEditFragment {
             if (srcBitmap != null && !srcBitmap.isRecycled()) {
                 srcBitmap.recycle();
             }
-
+            Bitmap mainBit = activity.getMainBit();
+            if (mainBit == null) {
+                return null;
+            }
             srcBitmap = Bitmap.createBitmap(activity.getMainBit().copy(
                     Bitmap.Config.ARGB_8888, true));
             return PhotoProcessing.filterPhoto(srcBitmap, type);
