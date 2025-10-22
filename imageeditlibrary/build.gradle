@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 34
@@ -37,38 +36,4 @@ dependencies {
     api 'com.makeramen:roundedimageview:2.3.0'
     api 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-}
-
-def getVersionName() {
-    try {
-        def stdout = new ByteArrayOutputStream()
-        exec {
-            commandLine 'git', 'describe', '--tags', '--abbrev=0'
-            standardOutput = stdout
-            ignoreExitValue = true
-        }
-        return stdout.toString().trim() ?: "1.0.0"
-    } catch (Exception e) {
-        return "1.0.0"
-    }
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                // 1. 保留这一行：它会正确生成 POM 和依赖关系
-                from components.findByName('release')
-
-                // 2. 你的 GAV 坐标（这些是正确的）
-                groupId = 'com.github.JoyHong'
-                artifactId = 'ImageEditor-Android'
-                version = getVersionName()
-
-                // 3. ！！！必须加上这一行！！！
-                //    显式地告诉 Gradle AAR 文件的位置
-                artifact("$buildDir/outputs/aar/${project.name}-release.aar")
-            }
-        }
-    }
 }

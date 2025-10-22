@@ -6,7 +6,6 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        maven { url "https://plugins.gradle.org/m2/" }
         google()
     }
     dependencies {
@@ -20,7 +19,6 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
-        maven { url "https://plugins.gradle.org/m2/" }
         google()
     }
 }
