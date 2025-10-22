@@ -39,6 +39,20 @@ dependencies {
 
 }
 
+def getVersionName() {
+    try {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'describe', '--tags', '--abbrev=0'
+            standardOutput = stdout
+            ignoreExitValue = true
+        }
+        return stdout.toString().trim() ?: "1.0.0"
+    } catch (Exception e) {
+        return "1.0.0"
+    }
+}
+
 afterEvaluate {
     publishing {
         publications {
@@ -46,6 +60,7 @@ afterEvaluate {
                 from components.findByName('release')
                 groupId = 'com.github.JoyHong'
                 artifactId = 'ImageEditor-Android'
+                version = getVersionName()
             }
         }
     }
