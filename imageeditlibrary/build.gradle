@@ -58,7 +58,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 // 1. 保留这一行：它会正确生成 POM 和依赖关系
-                from components.release
+                from components.findByName('release')
 
                 // 2. 你的 GAV 坐标（这些是正确的）
                 groupId = 'com.github.JoyHong'
