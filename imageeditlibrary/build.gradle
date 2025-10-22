@@ -37,22 +37,3 @@ dependencies {
     api 'androidx.constraintlayout:constraintlayout:2.1.4'
 
 }
-
-sourceSets {
-    main {
-        java {
-            srcDir 'src/main/java'
-        }
-        resources {
-            srcDir 'src/main/res'
-        }
-    }
-}
-
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from sourceSets.main.java, sourceSets.main.resources
-}
-
-
-

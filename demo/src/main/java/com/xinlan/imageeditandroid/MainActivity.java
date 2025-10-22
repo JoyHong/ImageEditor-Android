@@ -125,7 +125,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void editImageClick() {
         File outputFile = FileUtils.genEditFile(this);
-        EditImageActivity.start(this,path,outputFile.getAbsolutePath(),ACTION_REQUEST_EDITIMAGE);
+        // TODO
+//        EditImageActivity.start(this,path,outputFile.getAbsolutePath(),ACTION_REQUEST_EDITIMAGE);
     }
 
     /**
@@ -291,7 +292,9 @@ public class MainActivity extends AppCompatActivity {
     private final class LoadImageTask extends AsyncTask<String, Void, Bitmap> {
         @Override
         protected Bitmap doInBackground(String... params) {
-            return BitmapUtils.getSampledBitmap(params[0], imageWidth / 4, imageHeight / 4);
+//            return BitmapUtils.getSampledBitmap(params[0], imageWidth / 4, imageHeight / 4);
+            // TODO
+            return null;
         }
 
         @Override
