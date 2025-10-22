@@ -44,9 +44,8 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.findByName('release')
-                groupId = 'com.xinlan'
-                artifactId = 'imageeditlibrary'
-                version = '1.0.0'
+                groupId = 'com.github.JoyHong'
+                artifactId = 'ImageEditor-Android'
             }
         }
     }
